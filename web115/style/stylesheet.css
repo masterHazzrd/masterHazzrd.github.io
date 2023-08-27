@@ -90,3 +90,13 @@ footer {
 
     text-align: center;
 }
+
+.wc3_logo {
+    float: left;
+    padding: 8px 16px;
+}
+
+.css_logo {
+    float: right;
+    padding: 8px 16px;
+}
