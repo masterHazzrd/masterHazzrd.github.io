@@ -79,26 +79,26 @@ main > ol > li {
 
 footer {
     display: block;
-    
+
     margin-left: 350px;
     margin-right: 350px;
     margin-top: 100px;
 }
 
 .brand {
-    display: block;
-
     font: small-caps 1.15em Trattatello;
 
     text-align: center;
 }
 
 .wc3_logo {
+    display: block;
     float: left;
     padding: 8px 16px;
 }
 
 .css_logo {
+    display: block;
     float: right;
     padding: 8px 16px;
 }
