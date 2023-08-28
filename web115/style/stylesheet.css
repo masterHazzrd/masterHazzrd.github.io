@@ -80,9 +80,7 @@ main > ol > li {
 footer {
     font: small-caps 1.15em Trattatello;
 
-    color: black;
-
-    text-decoration: none;
+    color: black;    
 
     margin-left: 350px;
     margin-right: 350px;
@@ -94,6 +92,8 @@ footer {
     grid-template-columns: 2fr 4fr 2fr;
 
     justify-items: center;
+
+    text-decoration: none;
 
     text-shadow: 1px 2px 4px rgb(96, 231, 55);
 }
