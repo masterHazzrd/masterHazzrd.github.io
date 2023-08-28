@@ -85,6 +85,10 @@ footer {
     margin-top: 100px;
 }
 
+footer > nav {
+    display: block;
+}
+
 .brand {
     font: small-caps 1.15em Trattatello;
 
