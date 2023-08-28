@@ -87,6 +87,8 @@ footer {
 
 footer > nav {
     display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .brand {
