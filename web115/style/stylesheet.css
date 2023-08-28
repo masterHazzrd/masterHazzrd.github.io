@@ -80,6 +80,10 @@ main > ol > li {
 footer {
     font: small-caps 1.15em Trattatello;
 
+    color: black;
+
+    text-decoration: none;
+
     margin-left: 350px;
     margin-right: 350px;
     margin-top: 100px;
@@ -91,7 +95,7 @@ footer {
 
     justify-items: center;
 
-    border: 1px solid #A7CD3A;
+    text-shadow: 1px 2px 4px rgb(96, 231, 55);
 }
 
 .brand {
