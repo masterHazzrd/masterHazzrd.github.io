@@ -88,24 +88,10 @@ footer {
 #f_container {
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
-    grid-template-areas: l_logo links r_logo;
 
     border: 1px solid #A7CD3A;
 }
 
-footer > nav {
-    grid-area: links;
-    text-decoration: none;
-}
-
 .brand {
     text-align: center;
-}
-
-.wc3_logo {
-    grid-area: l_logo;
-}
-
-.css_logo {
-    grid-area: r_logo;
 }
