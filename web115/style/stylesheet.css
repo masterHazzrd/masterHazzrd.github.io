@@ -89,6 +89,8 @@ footer {
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
 
+    justify-items: center;
+
     border: 1px solid #A7CD3A;
 }
 
