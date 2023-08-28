@@ -102,18 +102,13 @@ footer > nav {
 
 .brand {
     font: small-caps 1.15em Trattatello;
-
     text-align: center;
 }
 
 .wc3_logo {
     grid-area: l_logo;
-    align-self: center;
-    padding: 8px 16px;
 }
 
 .css_logo {
     grid-area: r_logo;
-    align-self: center;
-    padding: 8px 16px;
 }
