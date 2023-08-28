@@ -85,8 +85,17 @@ footer {
     margin-top: 100px;
 }
 
+#f_container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-areas: l_logo links r_logo;
+
+    border: 1px solid #A7CD3A;
+}
+
 footer > nav {
-    display: block;
+    grid-area: links;
     text-align: center;
     text-decoration: none;
 }
@@ -98,13 +107,13 @@ footer > nav {
 }
 
 .wc3_logo {
-    display: block;
-    float: left;
+    grid-area: l_logo;
+    align-self: center;
     padding: 8px 16px;
 }
 
 .css_logo {
-    display: block;
-    float: right;
+    grid-area: r_logo;
+    align-self: center;
     padding: 8px 16px;
 }
