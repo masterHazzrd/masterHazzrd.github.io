@@ -90,6 +90,7 @@ main {
 
 main > .imgContainer > figcaption {
     display: block;
+    text-align: center;
     font-size: clamp(var(--min), var(--val), var(--max));
 
     --min: 1.75em;
