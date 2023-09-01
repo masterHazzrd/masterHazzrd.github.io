@@ -79,6 +79,7 @@ main {
 
 .imgContainer {
     border-radius: 25%;
+    box-shadow: 0 0 5px 10px #FF5E00;
     display: block;
     margin-left: auto;
     margin-right: auto;
