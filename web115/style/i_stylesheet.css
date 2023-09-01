@@ -118,6 +118,8 @@ footer {
 #f_container {
     display: grid;
     grid-template-columns: 2fr 4fr 2fr;
+    
+    margin-bottom: 150px;
 
     justify-items: center;
 
@@ -125,7 +127,6 @@ footer {
 }
 
 #f_container a {
-    margin-bottom: 150px;
     text-decoration: none;
 }
 
