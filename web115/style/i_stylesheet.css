@@ -79,7 +79,7 @@ main {
 
 .imgContainer {
     border-radius: 25%;
-    box-shadow: 0 0 5px 10px #FF5E00;
+    box-shadow: 0 0 5px 10px rgba(255,95,0, .55);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -92,11 +92,8 @@ main > .imgContainer > figcaption {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    font-size: clamp(var(--min), var(--val), var(--max));
 
-    --min: 1.75em;
-    --val: 3vw;
-    --max: 2.25em;
+    font-size: clamp(1.75em, 3vw, 2.25em);
 }
 
 main > .text_box > ol {
