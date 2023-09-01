@@ -106,25 +106,28 @@ main > .text_box > ol {
 }
 
 footer {
+    font: small-caps 1.15em Trattatello;
+
+    color: black;    
+
     margin-left: 350px;
     margin-right: 350px;
     margin-top: 100px;
 }
 
+#f_container {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+
+    justify-items: center;
+
+    text-shadow: 1px 2px 4px rgb(96, 231, 55);
+}
+
+#f_container a {
+    text-decoration: none;
+}
+
 .brand {
-    display: block;
-
-    font: small-caps 1.15em Trattatello;
-
     text-align: center;
-}
-
-.wc3_logo {
-    float: left;
-    padding: 8px 16px;
-}
-
-.css_logo {
-    float: right;
-    padding: 8px 16px;
 }
