@@ -118,11 +118,11 @@ footer {
 #f_container {
     margin-bottom: 75px;
 
+    text-align: center;
     text-shadow: 1px 2px 4px #FF5E00;
 }
 
 #f_container a {
-    text-align: center;
     text-decoration: none;
 }
 
