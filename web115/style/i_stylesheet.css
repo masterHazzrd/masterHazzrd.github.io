@@ -106,21 +106,17 @@ main > .text_box > ol {
 }
 
 footer {
-    font: small-caps clamp(.6em, 3vw, 1.2em) Trattatello;
+    font: small-caps clamp(.4em, 2vw, 1.2em) Trattatello;
 
     color: black;    
 
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 100px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 75px;
 }
 
 #f_container {
-    display: block;
-    
     margin-bottom: 75px;
-
-    justify-items: stretch;
 
     text-shadow: 1px 2px 4px #FF5E00;
 }
