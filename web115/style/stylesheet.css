@@ -64,7 +64,7 @@ main {
 }
 
 main {
-    font: small-caps 1.5em Trattatello;
+    font: small-caps clamp(.75em, 4vw, 1.5em) Trattatello;
 }
 
 main > ol {

@@ -35,7 +35,7 @@ body {
 
     float: left;
 
-    font-size: clamp(1em, 3vw, 1.85em);
+    font-size: clamp(1em, 3vw, 1.85em); 
 
     text-align: center;
     text-decoration: none;
