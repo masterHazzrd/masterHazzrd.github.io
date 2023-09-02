@@ -67,6 +67,10 @@ main {
     font: small-caps clamp(.75em, 4vw, 1.5em) Trattatello;
 }
 
+main > h2 {
+    text-align: center;
+}
+
 main > ol {
     list-style-type: upper-roman;
 }
