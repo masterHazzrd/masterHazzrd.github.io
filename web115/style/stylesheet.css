@@ -52,7 +52,7 @@ body {
     float: right;
 }
 
-#h_title {
+header > h1{
     font: small-caps bold 3.25em Trattatello;
 
     text-align: center;
