@@ -86,8 +86,9 @@ footer {
 }
 
 #f_container {
-    display: grid;
-    grid-template-columns: 2fr 4fr 2fr;
+    display: block;
+    
+    margin-bottom: 75px;
 
     justify-items: center;
 
