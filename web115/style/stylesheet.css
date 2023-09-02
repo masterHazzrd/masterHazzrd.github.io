@@ -77,6 +77,7 @@ main > ol {
 
 main > ol > li {
     margin-top: 25px;
+    text-decoration: none; /* Just added take out if it does not work*/
 }
 
 footer {
