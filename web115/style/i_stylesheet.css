@@ -106,7 +106,7 @@ main > .text_box > ol {
 }
 
 footer {
-    font: small-caps 1.15em Trattatello;
+    font: small-caps clamp(.8em, 3vw, 1.2em) Trattatello;
 
     color: black;    
 
