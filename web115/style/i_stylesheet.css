@@ -120,8 +120,7 @@ footer {
     
     margin-bottom: 75px;
 
-    justify-items: center;
-    justify-content: space-evenly;
+    justify-items: stretch;
 
     text-shadow: 1px 2px 4px #FF5E00;
 }
