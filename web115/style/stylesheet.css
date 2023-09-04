@@ -107,3 +107,7 @@ footer {
 .brand {
     text-align: center;
 }
+
+footer > #f_container > nav {
+    text-align: center;
+}
