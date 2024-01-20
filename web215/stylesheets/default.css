@@ -3,6 +3,9 @@
 * {
     box-sizing: border-box;
 
+    background-color: #214761;
+    color: #f1f7ed;
+
     margin: 0;
     padding: 0; 
 
@@ -13,12 +16,18 @@
 
 /* Code below is for the index page header section */
 
-header h1,h2 {
+header h1 {
     padding: 35px 0;
     
     text-align: center;
 
-    font-size: 3.75rem;
+    font-size: 4.25rem;
+}
+
+header h2 {
+    text-align: center;
+
+    font-size: 2.25rem;
 }
 
 /* Code below is for the index page main section */
@@ -26,11 +35,35 @@ header h1,h2 {
 main p {
     text-align: center;
     font-size: 1.75rem;
-    padding: 2% 85px;
+    padding: 2% 150px;
 }
 
 main p strong {
-    font-weight: 700;
+    color: #91c7b1;
+}
+
+#link_area {
+    display: flex;
+    justify-content: space-around;
+
+    width: 92vw;
+    height: 400px;
+
+    margin: 0 auto;
+}
+
+main a {
+    width: 300px;
+    height: 45px;
+
+    margin: auto;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 2rem;
+
+    border: 3px solid black;
+    border-radius: 25px;
 }
 
 /* Code below is for the index page footer section */
