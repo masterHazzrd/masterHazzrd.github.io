@@ -6,79 +6,151 @@
     background-color: #214761;
     color: #f1f7ed;
 
-    margin: 0;
-    padding: 0; 
-
-    font-family: "Allerta Stencil", sans-serif;
-    font-weight: 400;
+    font-family: "allert Stencil", sans-serif;
+    font: 400;
     font-style: normal;
 }
 
-/* Code below is for the index page header section */
+body {
+    display: grid;
 
-#index_header h1 {
-    padding: 35px 0;
-    
-    text-align: center;
-
-    font-size: 4.25rem;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "nav header header header"
+                         ".  header header header"
+                         "main main main main"
+                         "footer footer footer footer";
+    gap: 10px;
 }
 
-#index_header h2 {
-    text-align: center;
+/* Code below here is for the intro html page */
 
-    font-size: 2.25rem;
+/* intro nav */
+nav {
+    grid-area: nav;
+
+    /* border: 1px solid; */
 }
 
-/* Code below is for the index page main section */
-
-main p {
-    text-align: center;
-    font-size: 1.75rem;
-    padding: 2% 150px;
+.dropMenu {
+    position: relative;
+    display: inline-block;
 }
 
-main p strong {
-    color: #91c7b1;
-}
-
-#link_area {
-    display: flex;
-    justify-content: space-around;
-
-    width: 92vw;
-    height: 400px;
-
-    margin: 0 auto;
-}
-#link_area a {
-    width: 300px;
-    height: 45px;
-
-    margin: auto;
-
-    text-align: center;
-    text-decoration: none;
-    font-size: 2rem;
-
-    border: 3px solid #91c7b1;
-    border-radius: 10px;
-}
- 
- #link {
+.menuBtn {
     background-color: #91c7b1;
- }
+    color: #f1f7ed;
+    padding: 16px 214px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
-/* Code below is for the index page footer section */
+.dropMenu_content {
+    display: none;
+    position: absolute;
+    background-color: rgba(191, 223, 210, .5);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropMenu_content a {
+    color: #f1f7ed;
+    padding: 12px 193px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropMenu_content a:hover {
+    background-color: rgba(191, 223, 210, .5);
+}
+
+.dropMenu:hover .dropMenu_content {
+    display: block;
+}
+
+.dropMenu:hover .menuBtn {
+    background-color: rgba(191, 223, 210, .5);
+}
+/* intro nav*/
+
+/* intro header */
+header {
+    grid-area: header;
+
+    max-width: 98%;
+
+    /* border: 1px solid; */
+}
+
+header h1 {
+    padding-left: 15%;
+}
+
+header h2 {
+    padding-left: 30%;
+}
+/* intro header */
+
+/* intro main */
+main {
+    grid-area: main;
+
+    max-width: 98.5%;
+    height: auto;
+
+    /* border: 1px solid; */
+}
+
+#m_container {
+    display: grid;
+
+    grid-template-columns: 29.25% 69.25%;
+    grid-template-rows: auto;
+    grid-template-areas: "m_img m_content";
+}
+
+#m_img {
+    grid-area: m_img;
+
+    text-align: center;
+}
+
+#m_img img {
+    max-width: 100%;
+}
+
+#m_content {
+    grid-area: m_content;
+
+    text-align: justify;
+    font-size: 22px;
+
+    padding: auto 10px;
+
+    /* border: 1px solid; */
+}
+
+#m_content ul li {
+    padding: 8px 6px;
+}
+
+/* intro main */
+
+/* intro footer */
 
 footer {
+    grid-area: footer;
+
+    width: 99%;
+
     text-align: center;
 
-    left: 0;
-    bottom: 0;
     position: fixed;
+    left: 10px;
+    bottom: 0;
 
-    width: 100%;
+    /* border: 1px solid; */
 }
 
 .foot-nav {
@@ -110,93 +182,4 @@ footer {
     padding: 14px 16px;
 }
 
-
-/* Code below here is for the intro html */
-/* Nav */
-.dropbtn {
-  background-color: #91c7b1;
-  color: #f1f7ed;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  min-width: 160px;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: rgba(191, 223, 210, .5);
-  min-width: 160px;
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: #f1f7ed;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: rgba(191, 223, 210, .5);
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: rgba(191, 223, 210, .5);  
-}
-
-#intro_header {
-    text-align: center;
-    top: 0;
-    width: 100%;
-    /* border: 2px solid; */
-}
-
-#intro_header h1 {
-    font-size: 4.5rem;
-
-    padding: 35px 0;
-}
-
-#intro_header h2 {
-    font-size: 2.75rem;
-}
-
-#intro_header h3 {
-    padding: 35px 0;
-    text-align: center;
-    font-size: 1.75rem;
-}
-
-#intro_article {
-    padding: 10px;
-    /* border: 2px solid; */
-}
-
-figure img, figcaption {
-    padding-left: 10px;
-    width: 450px;
-    text-align: center;
-}
-
-section {
-    font-size: 18px;
-    margin-left: 460px;
-    border: 2px solid;
-}
+/* intro footer */
