@@ -16,7 +16,7 @@
 
 /* Code below is for the index page header section */
 
-header h1 {
+#index_header h1 {
     padding: 35px 0;
     
     text-align: center;
@@ -24,7 +24,7 @@ header h1 {
     font-size: 4.25rem;
 }
 
-header h2 {
+#index_header h2 {
     text-align: center;
 
     font-size: 2.25rem;
@@ -112,7 +112,7 @@ footer {
 
 
 /* Code below here is for the intro html */
-
+/* Nav */
 .dropbtn {
   background-color: #91c7b1;
   color: #f1f7ed;
@@ -159,4 +159,44 @@ footer {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: rgba(191, 223, 210, .5);  
+}
+
+#intro_header {
+    text-align: center;
+    top: 0;
+    width: 100%;
+    /* border: 2px solid; */
+}
+
+#intro_header h1 {
+    font-size: 4.5rem;
+
+    padding: 35px 0;
+}
+
+#intro_header h2 {
+    font-size: 2.75rem;
+}
+
+#intro_header h3 {
+    padding: 35px 0;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+#intro_article {
+    padding: 10px;
+    /* border: 2px solid; */
+}
+
+figure img, figcaption {
+    padding-left: 10px;
+    width: 450px;
+    text-align: center;
+}
+
+section {
+    font-size: 18px;
+    margin-left: 460px;
+    border: 2px solid;
 }
