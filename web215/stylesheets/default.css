@@ -16,8 +16,8 @@ body {
 
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
-    grid-template-areas: "nav header header header"
-                         ".  header header header"
+    grid-template-areas: "nav . . ."
+                         "header header header header"
                          "main main main main"
                          "footer footer footer footer";
     gap: 10px;
@@ -25,7 +25,7 @@ body {
 
 /* Code below here is for the intro html page */
 
-/* intro nav */
+/* web215default / index / intro: nav section */
 nav {
     grid-area: nav;
 
@@ -40,7 +40,7 @@ nav {
 .menuBtn {
     background-color: #91c7b1;
     color: #f1f7ed;
-    padding: 16px 214px;
+    padding: 12px 107px;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -50,13 +50,13 @@ nav {
     display: none;
     position: absolute;
     background-color: rgba(191, 223, 210, .5);
-    min-width: 160px;
+    min-width: 80px;
     z-index: 1;
 }
 
 .dropMenu_content a {
     color: #f1f7ed;
-    padding: 12px 193px;
+    padding: 12px 86px;
     text-decoration: none;
     display: block;
 }
@@ -74,7 +74,7 @@ nav {
 }
 /* intro nav*/
 
-/* intro header */
+/* intro / index: header section */
 header {
     grid-area: header;
 
@@ -84,15 +84,23 @@ header {
 }
 
 header h1 {
-    padding-left: 15%;
+    text-align: center;
+
+    padding: 0 0;
+
+    font-size: 3.25rem;
 }
 
 header h2 {
-    padding-left: 30%;
-}
-/* intro header */
+    text-align: center;
 
-/* intro main */
+    padding: 0 0;
+
+    font-size: 2.5rem;
+}
+/* intro / index: header section */
+
+/* intro / index: main section */
 main {
     grid-area: main;
 
@@ -117,14 +125,14 @@ main {
 }
 
 #m_img img {
-    max-width: 100%;
+    max-width: 85%;
 }
 
 #m_content {
     grid-area: m_content;
 
     text-align: justify;
-    font-size: 18px;
+    font-size: 16px;
 
     padding: 10px;
 
@@ -135,7 +143,68 @@ main {
     padding: 6px 12px;
 }
 
-/* intro main */
+#index_main {
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    grid-template-areas: "content content content" 
+                         "link link link";
+
+    /* border: 1px solid; */
+}
+
+#index_main_para {
+    grid-area: content;
+
+    font-size: 24px;
+    text-align: center;
+
+    padding: 0 150px;
+
+    /* border: 1px solid; */
+}
+
+#index_link_area {
+    grid-area: link;
+
+    justify-content: space-evenly;
+
+    display: grid;
+
+    grid-template-columns: 10% 10% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: "link_a link_b link_c";
+    gap: 15px;
+
+    /* border: 1px solid; */
+}
+
+#index_link_area a {
+    text-decoration: none;
+}
+
+#link_1 {
+    grid-area: link_a;
+
+    padding: 16px 12px;
+}
+
+#link_2 {
+    grid-area: link_b;
+
+    padding: 16px 12px;
+}
+
+#link_3 {
+    grid-area: link_c;
+
+    padding: 16px 12px;
+}
+
+/* intro / index: main section */
 
 /* intro footer */
 
@@ -146,7 +215,7 @@ footer {
 
     text-align: center;
 
-    position: fixed;
+    position: absolute;
     left: 10px;
     bottom: 0;
 
