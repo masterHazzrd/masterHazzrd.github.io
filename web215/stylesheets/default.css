@@ -11,6 +11,15 @@
     font-style: normal;
 }
 
+html, body {
+    height: 100%;
+}
+
+body > footer {
+    position: sticky;
+    top: 100vh;
+}
+
 body {
     display: grid;
 
@@ -169,6 +178,11 @@ main {
     /* border: 1px solid; */
 }
 
+main p a {
+    text-decoration: none;
+    color: #91c7b1;
+}
+
 #index_link_area {
     grid-area: link;
 
@@ -249,15 +263,9 @@ main {
 footer {
     grid-area: footer;
 
-    width: 99%;
+    width: 98%;
 
     text-align: center;
-
-    position: absolute;
-    left: 10px;
-    bottom: 0;
-
-    /* border: 1px solid; */
 }
 
 .foot-nav {
@@ -265,7 +273,7 @@ footer {
 }
 
 .foot-nav a {
-    color: black;
+    color: #f1f7ed;
 
     text-align: center;
     text-decoration: none;
@@ -280,7 +288,7 @@ footer {
 }
 
 .foot-nav a:hover, .index-main p strong {
-    text-shadow: 0px 1px 3px rgb(96, 231, 55);
+    text-shadow: 0px 1px 2px black;
 }
 
 .foot-nav a.push-right {
