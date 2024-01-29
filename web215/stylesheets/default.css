@@ -15,10 +15,6 @@ html, body {
     height: 100%;
 }
 
-body > footer {
-    position: sticky;
-    top: 100vh;
-}
 
 body {
     display: grid;
@@ -263,6 +259,8 @@ main p a {
 footer {
     grid-area: footer;
 
+    position: sticky;
+    top: 100vh;
     width: 98%;
 
     text-align: center;
