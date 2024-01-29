@@ -11,6 +11,10 @@
     font-style: normal;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     display: grid;
 
@@ -251,11 +255,13 @@ footer {
 
     width: 99%;
 
-    text-align: center;
+    grid-area: footer;
 
-    position: absolute;
-    left: 10px;
-    bottom: 0;
+    position: sticky;
+    top: 100vh;
+    width: 98%;
+
+    text-align: center;
 
     /* border: 1px solid; */
 }
@@ -288,5 +294,3 @@ footer {
 
     padding: 14px 16px;
 }
-
-/* intro footer */
