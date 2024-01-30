@@ -240,8 +240,7 @@ main p a {
 
 footer {
     grid-area: footer;
-
-    position: sticky;
+    
     bottom: 0;
     width: 99.5%;
 
