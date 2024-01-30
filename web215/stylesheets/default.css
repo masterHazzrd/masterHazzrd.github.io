@@ -164,6 +164,11 @@ main {
 
 main p a {
     text-decoration: none;
+    color: rgba(145, 199, 177, .4);
+    /*color: #91c7b1;*/
+}
+
+main p a:hover {
     color: #91c7b1;
 }
 
@@ -240,7 +245,7 @@ main p a {
 
 footer {
     grid-area: footer;
-    
+
     bottom: 0;
     width: 99.5%;
 
