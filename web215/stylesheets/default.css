@@ -88,15 +88,15 @@ header {
 }
 
 header h1 {
-    margin-left: 18%;
+    margin-left: 14%;
 
-    font-size: 3.25rem;
+    font-size: 4rem;
 }
 
 header h2 {
-    margin-left: 40%;
+    margin-left: 42%;
 
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 /* intro / index: header section */
 
@@ -157,7 +157,7 @@ main {
     font-size: 24px;
     text-align: center;
 
-    padding: 0 11% 4%;
+    padding: 03.5% 11% 0%;
 
     /* border: 1px solid; */
 }
@@ -182,8 +182,6 @@ main p a:hover {
     grid-template-rows: auto;
     grid-template-areas: "link_a link_b link_c";
     gap: 15px;
-
-    /* border: 1px solid; */
 }
 
 #index_link_area a {
