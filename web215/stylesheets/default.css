@@ -220,16 +220,14 @@ main p a:hover {
 #contract_main_container {
     grid-area: main;
 
-    padding: 0 225px;
+    padding: 0 8%;
 
-    font-size: 20px; 
-
-    /* border: 2px solid; */
+    font-size: 22px; 
 }
 
 #contract_main_container ol li {
     list-style-type: none;
-    padding: 8px 0;
+    padding: 10px 0;
 }
 
 .text_box ol li a, strong {
