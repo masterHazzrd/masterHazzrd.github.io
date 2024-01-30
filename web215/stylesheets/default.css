@@ -180,7 +180,7 @@ main p a:hover {
     display: grid;
 
     grid-template-rows: auto;
-    grid-template-areas: "link_a link_b link_c";
+    grid-template-areas: "link_a link_b link_c link_d";
     gap: 15px;
 }
 
@@ -210,6 +210,10 @@ main p a:hover {
 
 #link_3 {
     grid-area: link_c;
+}
+
+#link_4 {
+    grid-area: link_d;
 }
 /* index html */
 /* contract html */
