@@ -4,9 +4,10 @@
     box-sizing: border-box;
 
     background-color: #F26724;
-    color: #571C1E;
+    color: #772e25;
 
-    font-family: "allert Stencil", sans-serif;
+    font-family: "Architects Daughter", "Amatic SC", 
+                  sans-serif, cursive;
     font: 400;
     font-style: normal;
 }
@@ -18,9 +19,10 @@ html, body {
 body {
     display: grid;
 
-    grid-template-columns: 5% 31.5% 31.5% 31.5%;
+    grid-template-columns: 31.5% 5% 31.5% 31.5%;
     grid-template-rows: 225px auto 95px;
-    grid-template-areas: "nav header header header"
+    grid-template-areas: "header header header header"
+                         "nav nav nav nav"
                          "main main main main"
                          "footer footer footer footer";
     gap: 10px;
@@ -33,14 +35,15 @@ nav {
     grid-area: nav;
 }
 
+/*
 .dropMenu {
     position: relative;
     display: inline-block;
 }
 
 .menuBtn {
-    background-color: #571C1E;
-    color: #E3C177;
+    background-color: #772e25;
+    color: #197278;
     padding: 12px 107px;
     font-size: 16px;
     border: none;
@@ -50,20 +53,20 @@ nav {
 .dropMenu_content {
     display: none;
     position: absolute;
-    background-color: rgba(87, 28, 30, 0.6);
+    background-color: rgba(119, 46, 37, .75) ;
     min-width: 80px;
     z-index: 1;
 }
 
 .dropMenu_content a {
-    color: #E3C177;
+    color: #283d3b;
     padding: 12px 86px;
     text-decoration: none;
     display: block;
 }
 
 .dropMenu_content a:hover {
-    background-color: rgba(87, 28, 30, 0.6);
+    background-color: rgba(119, 46, 37, .5);
 }
 
 .dropMenu:hover .dropMenu_content {
@@ -71,8 +74,9 @@ nav {
 }
 
 .dropMenu:hover .menuBtn {
-    background-color: rgba(87, 28, 30, 0.6);
+    background-color: rgba(119, 46, 37, .6) ;
 }
+*/
 /* intro nav*/
 
 /* intro / index: header section */
