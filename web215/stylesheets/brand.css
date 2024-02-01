@@ -19,8 +19,8 @@ html, body {
 body {
     display: grid;
 
-    grid-template-columns: 31.5% 5% 31.5% 31.5%;
-    grid-template-rows: 225px auto 95px;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+    grid-template-rows: 225px auto auto 95px;
     grid-template-areas: "header header header header"
                          "nav nav nav nav"
                          "main main main main"
@@ -28,11 +28,32 @@ body {
     gap: 10px;
 }
 
+hr {
+    border: 3px dashed #772e25;
+
+    width: 85%;
+
+    margin-top: 3.5vh;
+}
+
 /* Code below here is for the intro html page */
 
 /* nav section */
 nav {
     grid-area: nav;
+    
+    text-align: center;   
+}
+
+.top_nav a {
+    background-color: #edddd4;
+    color: #283d3b;
+
+    padding: 5px 25px;
+    
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
 }
 
 /*
@@ -89,15 +110,15 @@ header {
 }
 
 header h1 {
-    margin-left: 14%;
+    text-align: center;
 
-    font-size: 4rem;
+    font-size: clamp(2rem, 2.5vw, 4rem);
 }
 
 header h2 {
     margin-left: 42%;
 
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 2.5vw, 2.5rem);
 }
 /* intro / index: header section */
 
@@ -106,17 +127,9 @@ header h2 {
 footer {
     grid-area: footer;
 
-    width: 99%;
-
-    grid-area: footer;
-
-    position: sticky;
-    top: 100vh;
     width: 98%;
 
     text-align: center;
-
-    /* border: 1px solid; */
 }
 
 .foot-nav {
@@ -129,21 +142,17 @@ footer {
     text-align: center;
     text-decoration: none;
 
-    font-size: clamp(.425rem, 3vw, .85rem);
+    font-size: clamp(.425rem, 2.5vw, .85rem);
 }
 
 .foot-nav a.push-left {
     float: left;
-
-    padding: 14px 16px;
 }
 
-.foot-nav a:hover, .index-main p strong {
+.foot-nav a:hover {
     text-shadow: 0px 1px 3px rgb(96, 231, 55);
 }
 
 .foot-nav a.push-right {
     float: right;
-
-    padding: 14px 16px;
 }
