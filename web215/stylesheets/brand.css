@@ -20,93 +20,74 @@ body {
     display: grid;
 
     grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
-    grid-template-rows: 225px auto auto 95px;
+    grid-template-rows: 150px auto auto 95px;
     grid-template-areas: "header header header header"
-                         "nav nav nav nav"
+                         "navbar navbar navbar navbar"
                          "main main main main"
                          "footer footer footer footer";
     gap: 10px;
 }
 
-hr {
-    border: 3px dashed #772e25;
 
-    width: 85%;
-
-    margin-top: 3.5vh;
-}
 
 /* Code below here is for the intro html page */
 
-/* nav section */
-nav {
-    grid-area: nav;
-    
-    text-align: center;   
+/* navbar */
+div.navbar {
+    grid-area: navbar;
+
+    margin: 0px;
+    padding: 0 10%;  
 }
 
-.top_nav a {
-    background-color: #edddd4;
-    color: #283d3b;
-
-    padding: 5px 25px;
+.navbar ul {
+    margin: auto;
+    padding: 0px;
     
-    font-weight: 800;
     text-align: center;
+}
+
+.navbar ul li {
+    display: inline-flex;
+
+    list-style-type: none;
+
+    width: 128px;
+    height: 77px;
+    margin: 0px;
+    padding: 0px;
+
+    text-align: center;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    background-color: rgba(25, 114, 120, 0.5);
+    color: rgba(237, 221, 212, 0.5);
+
+    font-weight: 800;
+
+    padding: 4px 12px;
+
     text-decoration: none;
+
+    align-self: center;
 }
 
-/*
-.dropMenu {
-    position: relative;
-    display: inline-block;
+.navbar ul li a:hover {
+    background-color: rgb(25, 114, 120);
+    color: rgb(237, 221, 212);
 }
 
-.menuBtn {
-    background-color: #772e25;
-    color: #197278;
-    padding: 12px 107px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
+/* navbar */
 
-.dropMenu_content {
-    display: none;
-    position: absolute;
-    background-color: rgba(119, 46, 37, .75) ;
-    min-width: 80px;
-    z-index: 1;
-}
-
-.dropMenu_content a {
-    color: #283d3b;
-    padding: 12px 86px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropMenu_content a:hover {
-    background-color: rgba(119, 46, 37, .5);
-}
-
-.dropMenu:hover .dropMenu_content {
-    display: block;
-}
-
-.dropMenu:hover .menuBtn {
-    background-color: rgba(119, 46, 37, .6) ;
-}
-*/
-/* intro nav*/
-
-/* intro / index: header section */
+/* header section */
 header {
     grid-area: header;
 
     max-width: 98%;
-
-    /* border: 1px solid; */
 }
 
 header h1 {
@@ -114,13 +95,17 @@ header h1 {
 
     font-size: clamp(2rem, 2.5vw, 4rem);
 }
+/* header section */
 
-header h2 {
-    margin-left: 42%;
-
-    font-size: clamp(1.25rem, 2.5vw, 2.5rem);
+/* main section */
+main {
+    grid-area: main;
 }
-/* intro / index: header section */
+
+main h2 {
+    text-align: center;
+}
+/* main section */
 
 /* intro footer */
 
@@ -137,7 +122,7 @@ footer {
 }
 
 .foot-nav a {
-    color: black;
+    color: #edddd4;
 
     text-align: center;
     text-decoration: none;
@@ -150,7 +135,8 @@ footer {
 }
 
 .foot-nav a:hover {
-    text-shadow: 0px 1px 3px rgb(96, 231, 55);
+    color: #283d3b;
+    text-shadow: 0px 2px 4px #197278;
 }
 
 .foot-nav a.push-right {
