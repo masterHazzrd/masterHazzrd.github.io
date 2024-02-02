@@ -13,14 +13,14 @@
 }
 
 html, body {
-    height: 100%;
+    height: 99.5%;
 }
 
 body {
     display: grid;
 
     grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
-    grid-template-rows: 150px auto auto 95px;
+    grid-template-rows: 85px 85px auto 125px;
     grid-template-areas: "header header header header"
                          "navbar navbar navbar navbar"
                          "main main main main"
@@ -32,10 +32,25 @@ body {
 
 /* Code below here is for the intro html page */
 
-/* navbar */
-div.navbar {
-    grid-area: navbar;
+/* header section */
+header {
+    grid-area: header;
 
+    max-width: 98%;
+}
+
+header h1 {
+    text-align: center;
+
+    font-size: clamp(2rem, 2.5vw, 4rem);
+}
+/* header section */
+
+/* navbar */
+nav {
+    grid-area: navbar;
+}
+div.navbar {
     margin: 0px;
     padding: 0 10%;  
 }
@@ -83,20 +98,6 @@ div.navbar {
 
 /* navbar */
 
-/* header section */
-header {
-    grid-area: header;
-
-    max-width: 98%;
-}
-
-header h1 {
-    text-align: center;
-
-    font-size: clamp(2rem, 2.5vw, 4rem);
-}
-/* header section */
-
 /* main section */
 main {
     grid-area: main;
@@ -105,6 +106,19 @@ main {
 main h2 {
     text-align: center;
 }
+
+.m_container {
+    width: 80%;
+    height: auto;
+
+    margin: auto;
+    padding: 0px;
+
+    text-align: center;
+
+    border: 1px solid;
+    border-radius: 25px;
+}
 /* main section */
 
 /* intro footer */
@@ -112,7 +126,7 @@ main h2 {
 footer {
     grid-area: footer;
 
-    width: 98%;
+    width: 99.99%;
 
     text-align: center;
 }
