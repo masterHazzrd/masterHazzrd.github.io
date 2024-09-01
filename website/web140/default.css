@@ -20,7 +20,7 @@ main {
     flex-direction: column;
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    width: 98%;
+    width: 99.5%;
     max-width: 99%; /* Prevent main content from causing overflow */
 }
 
@@ -33,6 +33,6 @@ footer {
     color: white; /* Adjust as needed */
     padding: 20px;
     text-align: center;
-    width: 98%;
+    width: 99.5%;
     max-width: 99%; /* Prevent footer from causing overflow */
 }
