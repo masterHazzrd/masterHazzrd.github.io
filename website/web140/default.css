@@ -18,10 +18,11 @@ main {
 }
 
 footer {
-    width: 100%; /* Footer spans the full width of the page */
-    text-align: center;
+    width: 100%; /* Ensure footer spans the full width */
     padding: 20px;
-    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
 footer p {
