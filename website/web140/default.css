@@ -13,3 +13,9 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+footer a {
+    margin: 0 10px; /* Adjust spacing between items */
+    color: white; /* Adjust link color */
+    text-decoration: none;
+}
