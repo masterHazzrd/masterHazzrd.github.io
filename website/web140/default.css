@@ -20,8 +20,8 @@ main {
     flex-direction: column;
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    width: 100%;
-    max-width: 100%; /* Prevent main content from causing overflow */
+    width: 99%;
+    max-width: 99%; /* Prevent main content from causing overflow */
 }
 
 h1, p {
@@ -33,6 +33,6 @@ footer {
     color: white; /* Adjust as needed */
     padding: 20px;
     text-align: center;
-    width: 100%;
-    max-width: 100%; /* Prevent footer from causing overflow */
+    width: 99%;
+    max-width: 99%; /* Prevent footer from causing overflow */
 }
