@@ -4,37 +4,26 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; /* Distribute space between elements */
     text-align: center;
 }
 
 main {
-    flex: 1; /* Ensures the main content takes up available space */
+    flex: 1; /* This allows the main content to grow and push the footer down */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+}
+
+h1, p {
+    margin: 10px 0; /* Add some spacing */
 }
 
 footer {
-    width: 100%; /* Ensure footer spans the full width */
+    background-color: #333; /* Adjust as needed */
+    color: white; /* Adjust as needed */
     padding: 20px;
     text-align: center;
-    position: relative;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-    margin-bottom: 10px; /* Space between the text and the validation links */
-}
-
-footer a {
-    margin: 0 5px; /* Adjust spacing between validation links */
-    display: inline-block;
-}
-
-footer a img {
-    vertical-align: middle; /* Align images with each other */
+    width: 100%; /* Ensure the footer spans the full width */
 }
