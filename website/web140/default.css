@@ -5,7 +5,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    width: 99.75%;
+    width: 99.9%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     min-height: 100vh;
     display: flex;
@@ -20,8 +20,8 @@ main {
     flex-direction: column;
     justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
-    width: 99.5%;
-    max-width: 99.75%; /* Prevent main content from causing overflow */
+    width: 99.8%;
+    max-width: 99.9%; /* Prevent main content from causing overflow */
 }
 
 h1, p {
@@ -33,6 +33,6 @@ footer {
     color: white; /* Adjust as needed */
     padding: 20px;
     text-align: center;
-    width: 99.5%;
-    max-width: 99.75%; /* Prevent footer from causing overflow */
+    width: 99.8%;
+    max-width: 99.9%; /* Prevent footer from causing overflow */
 }
