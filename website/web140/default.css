@@ -1,23 +1,31 @@
-body {
+* {
+    box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+}
+
+html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Distribute space between elements */
+    justify-content: space-between; /* Ensure footer stays at the bottom */
     text-align: center;
 }
 
 main {
-    flex: 1; /* This allows the main content to grow and push the footer down */
+    flex: 1; /* Allow the main content to grow and push the footer down */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    max-width: 100%; /* Prevent main content from causing overflow */
 }
 
 h1, p {
-    margin: 10px 0; /* Add some spacing */
+    margin: 10px 0; /* Add spacing */
 }
 
 footer {
@@ -25,5 +33,6 @@ footer {
     color: white; /* Adjust as needed */
     padding: 20px;
     text-align: center;
-    width: 100%; /* Ensure the footer spans the full width */
+    width: 100%;
+    max-width: 100%; /* Prevent footer from causing overflow */
 }
