@@ -12,15 +12,18 @@ html, body {
     flex-direction: column;
     justify-content: space-between; /* Ensure footer stays at the bottom */
     text-align: center;
+    background-color: #F5DEB3; /* Wheat for a light fall background */
 }
 
 strong {
-    text-shadow: 0px 1px 3px rgb(96, 231, 55);
+    text-shadow: 0px 1px 3px #FF4500; /* Red-orange shadow for emphasis */
 }
 
 header {
     text-align: center;
     padding: 20px 0;
+    background-color: #8B4513; /* SaddleBrown for the header background */
+    color: #FFD700; /* Golden text color */
 }
 
 main {
@@ -34,17 +37,44 @@ main {
 main>h1 {
     text-align: center;
     font-size: 64px;
+    color: #D2691E; /* Orange for main headings */
 }
 
 main>p {
     margin-left: 4%;
+    color: #8B0000; /* Dark red for body text */
 }
 
 footer {
-    background-color: #333; /* Adjust as needed */
-    color: white; /* Adjust as needed */
+    background-color: #5C4033; /* Dark brown */
+    color: #FFD700; /* Golden text */
     padding: 20px;
     text-align: center;
     width: 100%;
-    max-width: 100%; /* Prevent footer from causing overflow */
+    max-width: 100%;
+}
+
+.foot-nav {
+    overflow: hidden;
+}
+
+.foot-nav a {
+    color: #D2691E; /* Fall orange for links */
+    text-align: center;
+    text-decoration: none;
+    font-size: clamp(.425rem, 3vw, .85rem);
+}
+
+.foot-nav a:hover, .index-main p strong {
+    text-shadow: 0px 1px 3px #FF4500; /* Red-orange glow on hover */
+}
+
+.foot-nav a.push-left {
+    float: left;
+    padding: 14px 16px;
+}
+
+.foot-nav a.push-right {
+    float: right;
+    padding: 14px 16px;
 }
