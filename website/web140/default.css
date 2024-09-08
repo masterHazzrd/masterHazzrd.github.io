@@ -40,9 +40,21 @@ main>h1 {
     color: #D2691E; /* Orange for main headings */
 }
 
+main>h2 {
+    text-align: center;
+}
+
 main>p {
     margin-left: 4%;
     color: #8B0000; /* Dark red for body text */
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container a {
+    text-decoration: none;
 }
 
 main>p>strong {
