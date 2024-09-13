@@ -12,14 +12,15 @@
     font-style: normal;
 }
 
+/* General page layout (common to all pages) */
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
-    overflow: hidden; /* Prevent scrollbars */
 }
 
-body {
+/* Home page layout */
+body.home-page {
     max-width: 1920px;
     max-height: 1200px;
     margin: 0 auto; /* Centering the page horizontally */
@@ -30,6 +31,20 @@ body {
                          "main main main main"
                          "footer footer footer footer";
     gap: 5px;
+    overflow: hidden; /* Prevent scrollbars for home page */
+}
+
+/* intro.html layout */
+body.intro-page {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer";
+    overflow-y: auto; /* Allow scrolling on intro.html */
+    height: 100vh; /* Make sure it fills the viewport */
 }
 
 /* Header section */
@@ -61,6 +76,40 @@ main {
     grid-area: main;
 }
 
+/* Specific styles for intro.html */
+body.intro-page main {
+    padding: 20px; /* Padding for content */
+    overflow-y: auto; /* Allow scrolling within the content */
+}
+
+#m_container {
+    display: grid;
+    grid-template-columns: 29.25% 69.25%;
+    grid-template-rows: auto;
+    grid-template-areas: "m_img m_content";
+}
+
+#m_img {
+    grid-area: m_img;
+    text-align: center;
+}
+
+#m_img img {
+    max-width: 85%;
+}
+
+#m_content {
+    grid-area: m_content;
+    text-align: justify;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#m_content ul li {
+    padding: 4px 12px;
+}
+
+/* Home page main content */
 #index_main_para {
     grid-area: content;
     font-size: 24px;
