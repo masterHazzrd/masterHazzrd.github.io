@@ -1,15 +1,12 @@
 @charset "utf-8";
 
-
 /* border: 1px solid; */
 
 * {
     box-sizing: border-box;
-
-    background-color: #214761;
-    color: #f1f7ed;
-
-    font-family: "allert Stencil", sans-serif;
+    background-color: #3b2f2f; /* Dark brown for the background */
+    color: #f7e5d2; /* Light cream color for the text */
+    font-family: "Allerta Stencil", sans-serif;
     font: 400;
     font-style: normal;
 }
@@ -18,10 +15,8 @@ html, body {
     height: 100vh;
 }
 
-
 body {
     display: grid;
-
     grid-template-columns: 5% 31.5% 31.5% 31.5%;
     grid-template-rows: 225px auto 95px;
     grid-template-areas: "nav header header header"
@@ -30,9 +25,7 @@ body {
     gap: 5px;
 }
 
-/* Code below here is for the intro html page */
-
-/* web215default / index / intro: nav section */
+/* nav section */
 nav {
     grid-area: nav;
 }
@@ -43,8 +36,8 @@ nav {
 }
 
 .menuBtn {
-    background-color: #91c7b1;
-    color: #f1f7ed;
+    background-color: #d2691e; /* Fall orange for the menu button */
+    color: #f7e5d2; /* Light cream text */
     padding: 12px 107px;
     font-size: 16px;
     border: none;
@@ -54,20 +47,20 @@ nav {
 .dropMenu_content {
     display: none;
     position: absolute;
-    background-color: rgba(191, 223, 210, .5);
+    background-color: rgba(139, 69, 19, 0.5); /* Saddle brown with transparency */
     min-width: 80px;
     z-index: 1;
 }
 
 .dropMenu_content a {
-    color: #f1f7ed;
+    color: #f7e5d2; /* Light cream text for dropdown */
     padding: 12px 86px;
     text-decoration: none;
     display: block;
 }
 
 .dropMenu_content a:hover {
-    background-color: rgba(191, 223, 210, .5);
+    background-color: rgba(139, 69, 19, 0.7); /* Darker saddle brown on hover */
 }
 
 .dropMenu:hover .dropMenu_content {
@@ -75,40 +68,34 @@ nav {
 }
 
 .dropMenu:hover .menuBtn {
-    background-color: rgba(191, 223, 210, .5);
+    background-color: rgba(139, 69, 19, 0.7); /* Darker on hover */
 }
-/* intro nav*/
 
-/* intro / index: header section */
-/* index */
+/* header section */
 header {
     grid-area: header;
-
     max-width: 98%;
 }
 
 header h1 {
     margin-left: 14%;
-
     font-size: 4rem;
+    color: #b22222; /* Firebrick red for the main header */
 }
 
 header h2 {
     margin-left: 42%;
-
     font-size: 2rem;
+    color: #8b4513; /* Saddle brown for the sub-header */
 }
-/* intro / index: header section */
 
-/* intro / index: main section */
-/* intro html */
+/* main section */
 main {
     grid-area: main;
 }
 
 #m_container {
     display: grid;
-
     grid-template-columns: 29.25% 69.25%;
     grid-template-rows: auto;
     grid-template-areas: "m_img m_content";
@@ -116,7 +103,6 @@ main {
 
 #m_img {
     grid-area: m_img;
-
     text-align: center;
 }
 
@@ -126,79 +112,60 @@ main {
 
 #m_content {
     grid-area: m_content;
-
     text-align: justify;
     font-size: 16px;
-
     padding: 10px;
-
-    /* border: 1px solid; */
 }
 
 #m_content ul li {
     padding: 4px 12px;
 }
-/* intro html */
-/* index html */
+
 #index_main {
     grid-area: main;
-
     display: grid;
-
     grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
     grid-template-rows: 18% 15%;
     grid-template-areas: "link link link link"
-                         "content content content content" 
-                         ;
+                         "content content content content";
 }
 
 #index_main_para {
     grid-area: content;
-
     font-size: 24px;
     text-align: center;
-
-    padding: 03.5% 11% 0%;
-
-    /* border: 1px solid; */
+    padding: 3.5% 11% 0%;
 }
 
 main p a {
     text-decoration: none;
-    color: rgba(145, 199, 177, .4);
-    /*color: #91c7b1;*/
+    color: rgba(205, 92, 92, 0.7); /* Light Indian red for links */
 }
 
 main p a:hover {
-    color: #91c7b1;
+    color: #cd5c5c; /* Indian red on hover */
 }
 
 #index_link_area {
     grid-area: link;
-
     justify-content: space-evenly;
-
     display: grid;
-
     grid-template-rows: 18%;
     grid-template-areas: "link_a link_b link_c link_d";
     gap: 15px;
 }
 
 #index_link_area a {
-    background-color: rgba(145, 199, 177, .4);
-
+    background-color: rgba(205, 92, 92, 0.4); /* Light Indian red background */
     font-size: 20px;
-
     padding: 8px 80px;
     border: none;
     border-radius: 10px;
-
     text-decoration: none;
 }
 
 #index_link_area a:hover {
-    background-color: rgb(145, 199, 177);
+    background-color: rgb(205, 92, 92); /* Darker red on hover */
 }
 
 #link_1 {
@@ -216,18 +183,16 @@ main p a:hover {
 #link_4 {
     grid-area: link_d;
 }
-/* index html */
+
 /* contract html */
-#contract_container h3{
+#contract_container h3 {
     text-align: center;
 }
 
 #contract_main_container {
     grid-area: main;
-
     padding: 0 8%;
-
-    font-size: 22px; 
+    font-size: 22px;
 }
 
 #contract_main_container ol li {
@@ -236,21 +201,18 @@ main p a:hover {
 }
 
 .text_box ol li a, strong {
-    color: #91c7b1;
+    color: #d2691e; /* Fall orange for strong elements and links */
     text-decoration: none;
 }
-/* contract html */
-/* intro / index: main section */
 
-/* intro footer */
-
+/* footer */
 footer {
     grid-area: footer;
-
     bottom: 0;
     width: 99.5%;
-
     text-align: center;
+    background-color: #8b4513; /* Saddle brown background */
+    color: #f7e5d2; /* Light cream text */
 }
 
 .foot-nav {
@@ -258,11 +220,9 @@ footer {
 }
 
 .foot-nav a {
-    color: black;
-
+    color: #b22222; /* Firebrick red for footer links */
     text-align: center;
     text-decoration: none;
-
     font-size: clamp(.425rem, 3vw, .85rem);
 }
 
@@ -271,7 +231,7 @@ footer {
 }
 
 .foot-nav a:hover {
-    text-shadow: 0px 1px 3px rgb(96, 231, 55);
+    text-shadow: 0px 1px 3px #cd5c5c; /* Indian red shadow on hover */
 }
 
 .foot-nav a.push-right {
