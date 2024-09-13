@@ -1,104 +1,256 @@
 @charset "utf-8";
 
+
+/* border: 1px solid; */
+
 * {
-    box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+    box-sizing: border-box;
+
+    background-color: #214761;
+    color: #f1f7ed;
+
+    font-family: "allert Stencil", sans-serif;
+    font: 400;
+    font-style: normal;
 }
 
 html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Ensure footer stays at the bottom */
-    text-align: center;
-    background-color: #F5DEB3; /* Wheat for a light fall background */
+    height: 100vh;
 }
 
-strong {
-    text-shadow: 0px 1px 3px #FF4500; /* Red-orange shadow for emphasis */
+
+body {
+    display: grid;
+
+    grid-template-columns: 5% 31.5% 31.5% 31.5%;
+    grid-template-rows: 225px auto 95px;
+    grid-template-areas: "nav header header header"
+                         "main main main main"
+                         "footer footer footer footer";
+    gap: 5px;
 }
 
+/* Code below here is for the intro html page */
+
+/* web215default / index / intro: nav section */
+nav {
+    grid-area: nav;
+}
+
+.dropMenu {
+    position: relative;
+    display: inline-block;
+}
+
+.menuBtn {
+    background-color: #91c7b1;
+    color: #f1f7ed;
+    padding: 12px 107px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropMenu_content {
+    display: none;
+    position: absolute;
+    background-color: rgba(191, 223, 210, .5);
+    min-width: 80px;
+    z-index: 1;
+}
+
+.dropMenu_content a {
+    color: #f1f7ed;
+    padding: 12px 86px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropMenu_content a:hover {
+    background-color: rgba(191, 223, 210, .5);
+}
+
+.dropMenu:hover .dropMenu_content {
+    display: block;
+}
+
+.dropMenu:hover .menuBtn {
+    background-color: rgba(191, 223, 210, .5);
+}
+/* intro nav*/
+
+/* intro / index: header section */
+/* index */
 header {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #8B4513; /* SaddleBrown for the header background */
-    color: #FFD700; /* Golden text color */
+    grid-area: header;
+
+    max-width: 98%;
 }
 
+header h1 {
+    margin-left: 14%;
+
+    font-size: 4rem;
+}
+
+header h2 {
+    margin-left: 42%;
+
+    font-size: 2rem;
+}
+/* intro / index: header section */
+
+/* intro / index: main section */
+/* intro html */
 main {
-    flex: 1;
-    width: 80%; /* Take up 66% of the width */
-    margin-left: 10%; /* Create a 33% buffer from the left */
-    text-align: left; /* Left-align the text inside the main */
-    padding: 20px 0;
+    grid-area: main;
 }
 
-main>h1 {
+#m_container {
+    display: grid;
+
+    grid-template-columns: 29.25% 69.25%;
+    grid-template-rows: auto;
+    grid-template-areas: "m_img m_content";
+}
+
+#m_img {
+    grid-area: m_img;
+
     text-align: center;
-    font-size: 64px;
-    color: #D2691E; /* Orange for main headings */
 }
 
-main>h2 {
+#m_img img {
+    max-width: 85%;
+}
+
+#m_content {
+    grid-area: m_content;
+
+    text-align: justify;
+    font-size: 16px;
+
+    padding: 10px;
+
+    /* border: 1px solid; */
+}
+
+#m_content ul li {
+    padding: 4px 12px;
+}
+/* intro html */
+/* index html */
+#index_main {
+    grid-area: main;
+
+    display: grid;
+
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+    grid-template-rows: 18% 15%;
+    grid-template-areas: "link link link link"
+                         "content content content content" 
+                         ;
+}
+
+#index_main_para {
+    grid-area: content;
+
+    font-size: 24px;
+    text-align: center;
+
+    padding: 03.5% 11% 0%;
+
+    /* border: 1px solid; */
+}
+
+main p a {
+    text-decoration: none;
+    color: rgba(145, 199, 177, .4);
+    /*color: #91c7b1;*/
+}
+
+main p a:hover {
+    color: #91c7b1;
+}
+
+#index_link_area {
+    grid-area: link;
+
+    justify-content: space-evenly;
+
+    display: grid;
+
+    grid-template-rows: 18%;
+    grid-template-areas: "link_a link_b link_c link_d";
+    gap: 15px;
+}
+
+#index_link_area a {
+    background-color: rgba(145, 199, 177, .4);
+
+    font-size: 20px;
+
+    padding: 8px 80px;
+    border: none;
+    border-radius: 10px;
+
+    text-decoration: none;
+}
+
+#index_link_area a:hover {
+    background-color: rgb(145, 199, 177);
+}
+
+#link_1 {
+    grid-area: link_a;
+}
+
+#link_2 {
+    grid-area: link_b;
+}
+
+#link_3 {
+    grid-area: link_c;
+}
+
+#link_4 {
+    grid-area: link_d;
+}
+/* index html */
+/* contract html */
+#contract_container h3{
     text-align: center;
 }
 
-main>p {
-    margin-left: 4%;
-    color: #8B0000; /* Dark red for body text */
+#contract_main_container {
+    grid-area: main;
+
+    padding: 0 8%;
+
+    font-size: 22px; 
 }
 
-#main-nav {
-    background-color: #8B4513; /* Same as the header background */
+#contract_main_container ol li {
+    list-style-type: none;
     padding: 10px 0;
 }
 
-#main-nav ul {
-    list-style-type: none; /* Remove default bullets */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center the navigation items */
-}
-
-#main-nav ul li {
-    margin: 0 15px; /* Space between links */
-}
-
-#main-nav ul li a {
-    text-decoration: none;
-    color: #FFD700; /* Golden color for the links */
-    font-size: 1.2rem;
-    font-family: 'Allerta Stencil', sans-serif;
-}
-
-#main-nav ul li a:hover {
-    color: #FF4500; /* Red-orange hover effect */
-    text-shadow: 0px 1px 3px #FF4500; /* Same hover effect as the rest of the site */
-}
-
-.image-container {
-    text-align: center;
-}
-
-.image-container a {
+.text_box ol li a, strong {
+    color: #91c7b1;
     text-decoration: none;
 }
+/* contract html */
+/* intro / index: main section */
 
-main>p>strong {
-    text-shadow: 0px 0px 2px #FF4500;
-}
+/* intro footer */
 
 footer {
-    background-color: #5C4033; /* Dark brown */
-    color: #FFD700; /* Golden text */
-    padding: 20px;
+    grid-area: footer;
+
+    bottom: 0;
+    width: 99.5%;
+
     text-align: center;
-    width: 100%;
-    max-width: 100%;
 }
 
 .foot-nav {
@@ -106,22 +258,22 @@ footer {
 }
 
 .foot-nav a {
-    color: #D2691E; /* Fall orange for links */
+    color: black;
+
     text-align: center;
     text-decoration: none;
-    font-size: clamp(.425rem, 3vw, .85rem);
-}
 
-.foot-nav a:hover, .index-main p strong {
-    text-shadow: 0px 1px 3px #FF4500; /* Red-orange glow on hover */
+    font-size: clamp(.425rem, 3vw, .85rem);
 }
 
 .foot-nav a.push-left {
     float: left;
-    padding: 14px 16px;
+}
+
+.foot-nav a:hover {
+    text-shadow: 0px 1px 3px rgb(96, 231, 55);
 }
 
 .foot-nav a.push-right {
     float: right;
-    padding: 14px 16px;
 }
