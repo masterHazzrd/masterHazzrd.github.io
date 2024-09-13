@@ -12,20 +12,17 @@
     font-style: normal;
 }
 
-/* Ensure no scrollbars */
 html, body {
     width: 100%;
     height: 100%;
+    margin: 0;
     overflow: hidden; /* Prevent scrollbars */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
 }
 
-/* Main container for the page */
 body {
-    width: 1920px; /* Fixed width to match the screen resolution */
-    height: 1200px; /* Fixed height to match the screen resolution */
+    max-width: 1920px;
+    max-height: 1200px;
+    margin: 0 auto; /* Centering the page horizontally */
     display: grid;
     grid-template-columns: 5% 31.5% 31.5% 31.5%;
     grid-template-rows: 225px auto 95px;
@@ -40,52 +37,18 @@ nav {
     grid-area: nav;
 }
 
-.dropMenu {
-    position: relative;
-    display: inline-block;
-}
-
-.menuBtn {
-    background-color: #f4a261; /* Bright fall orange for the menu button */
-    color: #5c4033; /* Dark brown text */
-    padding: 12px 107px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropMenu_content {
-    display: none;
-    position: absolute;
-    background-color: rgba(240, 177, 94, 0.8); /* Warm fall orange with transparency */
-    min-width: 80px;
-    z-index: 1;
-}
-
-.dropMenu_content a {
-    color: #5c4033; /* Dark brown text for dropdown */
-    padding: 12px 86px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropMenu_content a:hover {
-    background-color: rgba(240, 177, 94, 1); /* Brighter orange on hover */
-}
-
-.dropMenu:hover .dropMenu_content {
-    display: block;
-}
-
-.dropMenu:hover .menuBtn {
-    background-color: rgba(240, 177, 94, 1); /* Brighter orange on hover */
-}
-
 /* Header section */
 header {
     grid-area: header;
-    max-width: 98%;
     text-align: center;
+    padding: 20px 0; /* Add padding to the header */
+}
+
+header h1, header h2 {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    width: 100%;
 }
 
 header h1 {
@@ -101,42 +64,6 @@ header h2 {
 /* Main section */
 main {
     grid-area: main;
-}
-
-#m_container {
-    display: grid;
-    grid-template-columns: 29.25% 69.25%;
-    grid-template-rows: auto;
-    grid-template-areas: "m_img m_content";
-}
-
-#m_img {
-    grid-area: m_img;
-    text-align: center;
-}
-
-#m_img img {
-    max-width: 85%;
-}
-
-#m_content {
-    grid-area: m_content;
-    text-align: justify;
-    font-size: 16px;
-    padding: 10px;
-}
-
-#m_content ul li {
-    padding: 4px 12px;
-}
-
-#index_main {
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
-    grid-template-rows: 18% 15%;
-    grid-template-areas: "link link link link"
-                         "content content content content";
 }
 
 #index_main_para {
@@ -193,32 +120,10 @@ main p a:hover {
     grid-area: link_d;
 }
 
-/* Contract section */
-#contract_container h3 {
-    text-align: center;
-}
-
-#contract_main_container {
-    grid-area: main;
-    padding: 0 8%;
-    font-size: 22px;
-}
-
-#contract_main_container ol li {
-    list-style-type: none;
-    padding: 10px 0;
-}
-
-.text_box ol li a, strong {
-    color: #e09f3e; /* Bright fall yellow-orange for strong elements and links */
-    text-decoration: none;
-}
-
 /* Footer section */
 footer {
     grid-area: footer;
-    bottom: 0;
-    width: 99.5%;
+    width: 100%;
     text-align: center;
     color: #5c4033; /* Dark brown text */
     border-top: 4px solid #d97d0d; /* Top border */
@@ -236,6 +141,17 @@ footer {
     text-align: center;
     text-decoration: none;
     font-size: clamp(.425rem, 3vw, .85rem);
+}
+
+/* Validation links pushed in by 15px */
+.foot-nav a.push-left {
+    float: left;
+    margin-left: 15px; /* Bring the left validation button in by 15px */
+}
+
+.foot-nav a.push-right {
+    float: right;
+    margin-right: 15px; /* Bring the right validation button in by 15px */
 }
 
 .foot-nav a:hover {
