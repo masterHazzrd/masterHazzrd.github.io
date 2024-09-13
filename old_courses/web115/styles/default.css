@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+/*  Default style sheet for WEB115-N801 Fall 2023
+
+    Author: John Gallagher
+    Date: Sept 5, 2023
+
+    Common code below:
+
+    border: 1px solid rgb(96, 231, 55);
+    border-radius: 10px;
+*/
+
+* {
+    box-sizing: border-box;
+
+    background-color: #f0f0f0;
+
+    margin: 0;
+    padding: 0;
+    
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+}
+
+body {
+    width: 100%;
+}
+
+hr {
+    margin: 0 15px 30px 15px;
+
+    border: 3px solid black;
+    box-shadow: 0px 3px 6px rgb(96, 231, 55);
+}
+
+/* Nav styling below */
+
+.top-nav {
+    overflow: hidden;
+}
+
+.top-nav a {
+    float: left;
+    
+    padding: 14px 16px;
+
+    color: black;
+    
+    text-align: center;
+    text-decoration: none;
+
+    font-size: clamp(.5rem, 4vw, 1.2rem);
+}
+
+.top-nav a:hover {
+    text-shadow: 0px 1px 3px rgb(96, 231, 55);
+}
+
+.top-nav a.push-right {
+    float: right;
+}
+
+/* Header styling below */
+
+header {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    height: 20vh;
+
+    margin: 0 15px 20px 15px;
+}
+
+h1 {
+    font-size: 3.5rem;
+
+    text-align: center;
+}
+
+strong {
+    text-shadow: 0px 1px 3px rgb(96, 231, 55);
+}
+
+/* Main styling below */
+
+main {
+    display: block;
+
+    text-align: center;
+
+    margin: 0 2%;
+}
+
+h3 {
+    font-size: 1.35rem;
+    padding-bottom: 2%;
+}
+
+main p {
+    padding: 12px 0;
+}
+
+main a{
+    color: #000000;
+}
+
+figcaption {
+    letter-spacing: .5px;
+}
+
+/* Footer styling below */
+
+footer {
+    text-align: center;
+
+    bottom: 0;
+    width: 100%;
+    height: 1.5vh;
+
+    padding: 25px 0;
+}
+
+.foot-nav {
+    overflow: hidden;
+}
+
+.foot-nav a {
+    color: black;
+
+    text-align: center;
+    text-decoration: none;
+
+    font-size: clamp(.425rem, 3vw, .85rem);
+}
+
+.foot-nav a.push-left {
+    float: left;
+
+    padding: 14px 16px;
+}
+
+.foot-nav a:hover, .index-main p strong {
+    text-shadow: 0px 1px 3px rgb(96, 231, 55);
+}
+
+.foot-nav a.push-right {
+    float: right;
+
+    padding: 14px 16px;
+}
+
+/* Code below is for the styling of the index page */
+
+.index-main {
+    min-height: 51vh;
+}
+
+.index-main h2 {
+    font-size: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+.index-main p {
+    padding: 3% 6%;
+    font-size: clamp(.5rem, 5vw, 1rem);
+    letter-spacing: 1px;
+}
+
+.index-main, .text_box a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.index-main a:visited{
+    color: rgb(0, 0, 0);
+}
+
+/* Code below is for the styling of the home page */
+
+.home-main {
+    height: fit-content;
+    
+    padding: 25px 0;
+}
+
+.home-main h2 {
+    font-size: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+.h-img {
+    padding: 35px 0;;
+}
+
+/* Code below is for styling of the introduction page */
+
+#intro, #sub-list {
+    margin: 15px 85px;
+    padding: 0 25px;
+}
+
+li {
+    text-align: justify;
+    letter-spacing: 1px;
+
+    margin-left: 0;
+    padding: 10px 20px;
+}
+
+li {
+    list-style: none;
+}
+
+li::marker {
+    content: "\2623";
+}
+
+/* Contact page styling */
+
+h2 {
+    font-size: 2rem;
+}
+
+.text_box {
+    margin: 25px 150px;
+    padding: 0 20px;
+    min-height: 44vh;
+
+    text-align: justify;
+
+    letter-spacing: 1px;
+}
+
+/*code below is for brand html page main logo area*/
+
+.logo-box {
+    width: 94vw;
+    height: auto;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px #000000;
+    border: 3px solid #60e737;
+    border-radius: 8px;
+}
+
+.mission-box {
+    text-align: justify;
+    letter-spacing: 2px;
+    font-size: clamp(.65rem, 5vw, 1.3rem);
+
+    margin: 0% 3%;
+    padding: 0% 3%;
+}
+
+
+.color-pallette-box {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    margin: 0% 10%;
+}
+
+.card-box {
+    width: 200px;
+    height: 100px;
+
+    margin: 1% auto;
+}
+
+.tile {
+    width: 150px;
+    height: 25px;
+    
+    margin: 0px auto;
+
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.font-box {
+    margin-bottom: 2%;
+
+    font-size: clamp(.65rem, 5vw, 1.3rem);
+    letter-spacing: 9px;
+}
+
+/* Code below is for fizz buzz 0 */
+
+#nav-img {
+    width: 17%;
+
+    margin: 32px;
+}
+
+#greeting {
+    font-size: 1.35rem;
+    letter-spacing: 1px;
+}
+
+.form {
+    border: 5px double rgb(96, 231, 55);
+    border-radius: 10px;
+
+    padding-top: 35px;
+}
+
+form ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    margin: 15px 150px 15px 150px;
+}
+
+.form div
+
+#form_input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+input {
+    margin-right: 35px;
+}
+
+button {
+    margin: 30px 10px 0px 10px;
+    padding: 6px;
+}
