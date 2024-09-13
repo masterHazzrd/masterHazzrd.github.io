@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 * {
     box-sizing: border-box; /* Ensure padding and borders are included in width/height */
 }
@@ -47,6 +49,35 @@ main>h2 {
 main>p {
     margin-left: 4%;
     color: #8B0000; /* Dark red for body text */
+}
+
+#main-nav {
+    background-color: #8B4513; /* Same as the header background */
+    padding: 10px 0;
+}
+
+#main-nav ul {
+    list-style-type: none; /* Remove default bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+}
+
+#main-nav ul li {
+    margin: 0 15px; /* Space between links */
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: #FFD700; /* Golden color for the links */
+    font-size: 1.2rem;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+#main-nav ul li a:hover {
+    color: #FF4500; /* Red-orange hover effect */
+    text-shadow: 0px 1px 3px #FF4500; /* Same hover effect as the rest of the site */
 }
 
 .image-container {
