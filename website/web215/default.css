@@ -4,8 +4,8 @@
 
 * {
     box-sizing: border-box;
-    background-color: #3b2f2f; /* Dark brown for the background */
-    color: #f7e5d2; /* Light cream color for the text */
+    background-color: #f9e79f; /* Soft yellow background */
+    color: #4a2800; /* Dark brown text */
     font-family: "Allerta Stencil", sans-serif;
     font: 400;
     font-style: normal;
@@ -36,8 +36,8 @@ nav {
 }
 
 .menuBtn {
-    background-color: #d2691e; /* Fall orange for the menu button */
-    color: #f7e5d2; /* Light cream text */
+    background-color: #f7b731; /* Bright yellow-orange for the menu button */
+    color: #4a2800; /* Dark brown text */
     padding: 12px 107px;
     font-size: 16px;
     border: none;
@@ -47,20 +47,20 @@ nav {
 .dropMenu_content {
     display: none;
     position: absolute;
-    background-color: rgba(139, 69, 19, 0.5); /* Saddle brown with transparency */
+    background-color: rgba(255, 195, 113, 0.8); /* Lighter yellow-orange with transparency */
     min-width: 80px;
     z-index: 1;
 }
 
 .dropMenu_content a {
-    color: #f7e5d2; /* Light cream text for dropdown */
+    color: #4a2800; /* Dark brown text for dropdown */
     padding: 12px 86px;
     text-decoration: none;
     display: block;
 }
 
 .dropMenu_content a:hover {
-    background-color: rgba(139, 69, 19, 0.7); /* Darker saddle brown on hover */
+    background-color: rgba(255, 195, 113, 1); /* Brighter yellow-orange on hover */
 }
 
 .dropMenu:hover .dropMenu_content {
@@ -68,7 +68,7 @@ nav {
 }
 
 .dropMenu:hover .menuBtn {
-    background-color: rgba(139, 69, 19, 0.7); /* Darker on hover */
+    background-color: rgba(255, 195, 113, 1); /* Brighter yellow-orange on hover */
 }
 
 /* header section */
@@ -80,13 +80,13 @@ header {
 header h1 {
     margin-left: 14%;
     font-size: 4rem;
-    color: #b22222; /* Firebrick red for the main header */
+    color: #e67e22; /* Vibrant orange for the main header */
 }
 
 header h2 {
     margin-left: 42%;
     font-size: 2rem;
-    color: #8b4513; /* Saddle brown for the sub-header */
+    color: #f39c12; /* Bright yellow for the sub-header */
 }
 
 /* main section */
@@ -139,11 +139,11 @@ main {
 
 main p a {
     text-decoration: none;
-    color: rgba(205, 92, 92, 0.7); /* Light Indian red for links */
+    color: rgba(245, 203, 92, 0.7); /* Soft golden yellow for links */
 }
 
 main p a:hover {
-    color: #cd5c5c; /* Indian red on hover */
+    color: #f5cb5c; /* Brighter golden yellow on hover */
 }
 
 #index_link_area {
@@ -156,84 +156,4 @@ main p a:hover {
 }
 
 #index_link_area a {
-    background-color: rgba(205, 92, 92, 0.4); /* Light Indian red background */
-    font-size: 20px;
-    padding: 8px 80px;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-#index_link_area a:hover {
-    background-color: rgb(205, 92, 92); /* Darker red on hover */
-}
-
-#link_1 {
-    grid-area: link_a;
-}
-
-#link_2 {
-    grid-area: link_b;
-}
-
-#link_3 {
-    grid-area: link_c;
-}
-
-#link_4 {
-    grid-area: link_d;
-}
-
-/* contract html */
-#contract_container h3 {
-    text-align: center;
-}
-
-#contract_main_container {
-    grid-area: main;
-    padding: 0 8%;
-    font-size: 22px;
-}
-
-#contract_main_container ol li {
-    list-style-type: none;
-    padding: 10px 0;
-}
-
-.text_box ol li a, strong {
-    color: #d2691e; /* Fall orange for strong elements and links */
-    text-decoration: none;
-}
-
-/* footer */
-footer {
-    grid-area: footer;
-    bottom: 0;
-    width: 99.5%;
-    text-align: center;
-    background-color: #8b4513; /* Saddle brown background */
-    color: #f7e5d2; /* Light cream text */
-}
-
-.foot-nav {
-    overflow: hidden;
-}
-
-.foot-nav a {
-    color: #b22222; /* Firebrick red for footer links */
-    text-align: center;
-    text-decoration: none;
-    font-size: clamp(.425rem, 3vw, .85rem);
-}
-
-.foot-nav a.push-left {
-    float: left;
-}
-
-.foot-nav a:hover {
-    text-shadow: 0px 1px 3px #cd5c5c; /* Indian red shadow on hover */
-}
-
-.foot-nav a.push-right {
-    float: right;
-}
+    background-color: rgba
