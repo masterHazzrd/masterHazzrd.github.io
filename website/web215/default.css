@@ -4,8 +4,8 @@
 
 * {
     box-sizing: border-box;
-    background-color: #f9e79f; /* Soft yellow background */
-    color: #4a2800; /* Dark brown text */
+    background-color: #f9e79f; /* Light yellow background */
+    color: #5c4033; /* Dark brown text */
     font-family: "Allerta Stencil", sans-serif;
     font: 400;
     font-style: normal;
@@ -36,8 +36,8 @@ nav {
 }
 
 .menuBtn {
-    background-color: #f7b731; /* Bright yellow-orange for the menu button */
-    color: #4a2800; /* Dark brown text */
+    background-color: #f4a261; /* Bright fall orange for the menu button */
+    color: #5c4033; /* Dark brown text */
     padding: 12px 107px;
     font-size: 16px;
     border: none;
@@ -47,20 +47,20 @@ nav {
 .dropMenu_content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 195, 113, 0.8); /* Lighter yellow-orange with transparency */
+    background-color: rgba(240, 177, 94, 0.8); /* Warm fall orange with transparency */
     min-width: 80px;
     z-index: 1;
 }
 
 .dropMenu_content a {
-    color: #4a2800; /* Dark brown text for dropdown */
+    color: #5c4033; /* Dark brown text for dropdown */
     padding: 12px 86px;
     text-decoration: none;
     display: block;
 }
 
 .dropMenu_content a:hover {
-    background-color: rgba(255, 195, 113, 1); /* Brighter yellow-orange on hover */
+    background-color: rgba(240, 177, 94, 1); /* Brighter orange on hover */
 }
 
 .dropMenu:hover .dropMenu_content {
@@ -68,7 +68,7 @@ nav {
 }
 
 .dropMenu:hover .menuBtn {
-    background-color: rgba(255, 195, 113, 1); /* Brighter yellow-orange on hover */
+    background-color: rgba(240, 177, 94, 1); /* Brighter orange on hover */
 }
 
 /* header section */
@@ -80,13 +80,13 @@ header {
 header h1 {
     margin-left: 14%;
     font-size: 4rem;
-    color: #e67e22; /* Vibrant orange for the main header */
+    color: #e09f3e; /* Bright fall yellow-orange for the main header */
 }
 
 header h2 {
     margin-left: 42%;
     font-size: 2rem;
-    color: #f39c12; /* Bright yellow for the sub-header */
+    color: #d97d0d; /* Darker orange for the sub-header */
 }
 
 /* main section */
@@ -139,11 +139,11 @@ main {
 
 main p a {
     text-decoration: none;
-    color: rgba(245, 203, 92, 0.7); /* Soft golden yellow for links */
+    color: rgba(224, 159, 62, 0.7); /* Yellow-orange for links */
 }
 
 main p a:hover {
-    color: #f5cb5c; /* Brighter golden yellow on hover */
+    color: #e09f3e; /* Brighter yellow-orange on hover */
 }
 
 #index_link_area {
@@ -156,4 +156,87 @@ main p a:hover {
 }
 
 #index_link_area a {
-    background-color: rgba
+    background-color: rgba(240, 177, 94, 0.4); /* Light fall orange background */
+    font-size: 20px;
+    padding: 8px 80px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#index_link_area a:hover {
+    background-color: rgb(240, 177, 94); /* Brighter orange on hover */
+}
+
+#link_1 {
+    grid-area: link_a;
+}
+
+#link_2 {
+    grid-area: link_b;
+}
+
+#link_3 {
+    grid-area: link_c;
+}
+
+#link_4 {
+    grid-area: link_d;
+}
+
+/* contract html */
+#contract_container h3 {
+    text-align: center;
+}
+
+#contract_main_container {
+    grid-area: main;
+    padding: 0 8%;
+    font-size: 22px;
+}
+
+#contract_main_container ol li {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.text_box ol li a, strong {
+    color: #e09f3e; /* Bright fall yellow-orange for strong elements and links */
+    text-decoration: none;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    bottom: 0;
+    width: 99.5%;
+    text-align: center;
+    color: #5c4033; /* Dark brown text */
+    border-top: 4px solid #d97d0d; /* Top border, same color as background */
+    border-bottom: 4px solid #d97d0d; /* Bottom border, same color as background */
+    padding: 20px 0; /* Add some padding for spacing */
+    background-color: transparent; /* Remove background color */
+}
+
+.foot-nav {
+    overflow: hidden;
+}
+
+.foot-nav a {
+    color: #f4a261; /* Bright fall orange for footer links */
+    text-align: center;
+    text-decoration: none;
+    font-size: clamp(.425rem, 3vw, .85rem);
+}
+
+.foot-nav a.push-left {
+    float: left;
+}
+
+.foot-nav a:hover {
+    text-shadow: 0px 1px 3px #e09f3e; /* Yellow-orange shadow on hover */
+}
+
+.foot-nav a.push-right {
+    float: right;
+}
