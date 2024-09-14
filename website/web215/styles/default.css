@@ -19,6 +19,21 @@ html, body {
     margin: 0;
 }
 
+/* Home page layout */
+body.home-page {
+    max-width: 1920px;
+    max-height: 1200px;
+    margin: 0 auto; /* Centering the page horizontally */
+    display: grid;
+    grid-template-columns: 5% 31.5% 31.5% 31.5%;
+    grid-template-rows: 225px auto 95px;
+    grid-template-areas: "header header header header"
+                         "main main main main"
+                         "footer footer footer footer";
+    gap: 5px;
+    overflow: hidden; /* Prevent scrollbars for home page */
+}
+
 /* intro.html layout */
 body.intro-page {
     display: grid;
@@ -57,23 +72,22 @@ header h2 {
 }
 
 /* Main section */
+main {
+    grid-area: main;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #d97d0d; /* Darker orange for the sub-header */
+}
+
+/* Specific styles for intro.html */
 body.intro-page main {
     padding: 20px; /* Padding for content */
     overflow-y: auto; /* Allow scrolling within the content */
 }
 
-/* Specific styles for intro.html only */
-/* Remove bullets for unordered lists in intro.html */
-body.intro-page ul {
-    list-style-type: none; /* Remove bullets */
-    padding-left: 0; /* Remove default padding */
-}
-
-body.intro-page ul li {
-    padding-left: 0; /* Ensure no padding in list items */
-}
-
-/* Container for the introduction content */
 #m_container {
     display: grid;
     grid-template-columns: 29.25% 69.25%;
@@ -98,7 +112,62 @@ body.intro-page ul li {
 }
 
 #m_content ul li {
-    padding-left: 0; /* Ensure padding is removed for intro page list */
+    padding: 4px 12px;
+}
+
+/* Home page main content */
+#index_main_para {
+    grid-area: content;
+    font-size: 24px;
+    text-align: center;
+    padding: 3.5% 11% 0%;
+}
+
+main p a {
+    text-decoration: none;
+    color: rgba(224, 159, 62, 0.7); /* Yellow-orange for links */
+}
+
+main p a:hover {
+    color: #e09f3e; /* Brighter yellow-orange on hover */
+}
+
+#index_link_area {
+    grid-area: link;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: 18%;
+    grid-template-areas: "link_a link_b link_c link_d";
+    gap: 15px;
+}
+
+#index_link_area a {
+    background-color: rgba(240, 177, 94, 0.4); /* Light fall orange background */
+    font-size: 20px;
+    padding: 8px 80px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#index_link_area a:hover {
+    background-color: rgb(240, 177, 94); /* Brighter orange on hover */
+}
+
+#link_1 {
+    grid-area: link_a;
+}
+
+#link_2 {
+    grid-area: link_b;
+}
+
+#link_3 {
+    grid-area: link_c;
+}
+
+#link_4 {
+    grid-area: link_d;
 }
 
 /* Footer section */
