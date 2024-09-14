@@ -58,6 +58,51 @@ main h2 {
     color: #d97d0d; /* Darker orange for the sub-header */
 }
 
+/* Navigation section */
+#index_link_area {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    gap: 20px; /* Space between the buttons */
+    margin-bottom: 20px; /* Margin below the navigation buttons */
+}
+
+#index_link_area div {
+    background-color: rgba(240, 177, 94, 0.4); /* Light fall orange background */
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#index_link_area div a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #5c4033; /* Dark brown text */
+}
+
+#index_link_area div:hover {
+    background-color: rgb(240, 177, 94); /* Brighter orange on hover */
+}
+
+/* Paragraph section */
+#index_main_para {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    color: #5c4033; /* Dark brown text */
+}
+
+#index_main_para strong {
+    text-shadow: 0px 1px 3px #FF4500; /* Red-orange shadow for emphasis */
+}
+
+#index_main_para a {
+    color: rgba(224, 159, 62, 0.7); /* Yellow-orange for links */
+    text-decoration: none;
+}
+
+#index_main_para a:hover {
+    color: #e09f3e; /* Brighter yellow-orange on hover */
+}
+
 /* Content container inside main */
 #m_container {
     display: flex;
