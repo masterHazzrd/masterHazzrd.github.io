@@ -38,13 +38,13 @@ body.home-page {
 body.intro-page {
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    grid-template-rows: auto;
+    grid-template-rows: auto 1fr auto; /* Adjust grid rows to ensure footer sticks to bottom */
     grid-template-areas: 
         "header header header"
         "main main main"
         "footer footer footer";
+    min-height: 100vh; /* Make sure it fills the viewport */
     overflow-y: auto; /* Allow scrolling on intro.html */
-    height: 100vh; /* Make sure it fills the viewport */
 }
 
 /* Header section */
@@ -74,6 +74,7 @@ header h2 {
 /* Main section */
 main {
     grid-area: main;
+    padding: 20px;
 }
 
 main h2 {
@@ -83,11 +84,6 @@ main h2 {
 }
 
 /* Specific styles for intro.html */
-body.intro-page main {
-    padding: 20px; /* Padding for content */
-    overflow-y: auto; /* Allow scrolling within the content */
-}
-
 #m_container {
     display: grid;
     grid-template-columns: 29.25% 69.25%;
@@ -101,7 +97,7 @@ body.intro-page main {
 }
 
 #m_img img {
-    max-width: 85%;
+    max-width: 70%;
 }
 
 #m_content {
@@ -112,62 +108,8 @@ body.intro-page main {
 }
 
 #m_content ul li {
+    list-style-type: none; /* Remove bullets */
     padding: 4px 12px;
-}
-
-/* Home page main content */
-#index_main_para {
-    grid-area: content;
-    font-size: 24px;
-    text-align: center;
-    padding: 3.5% 11% 0%;
-}
-
-main p a {
-    text-decoration: none;
-    color: rgba(224, 159, 62, 0.7); /* Yellow-orange for links */
-}
-
-main p a:hover {
-    color: #e09f3e; /* Brighter yellow-orange on hover */
-}
-
-#index_link_area {
-    grid-area: link;
-    justify-content: space-evenly;
-    display: grid;
-    grid-template-rows: 18%;
-    grid-template-areas: "link_a link_b link_c link_d";
-    gap: 15px;
-}
-
-#index_link_area a {
-    background-color: rgba(240, 177, 94, 0.4); /* Light fall orange background */
-    font-size: 20px;
-    padding: 8px 80px;
-    border: none;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-#index_link_area a:hover {
-    background-color: rgb(240, 177, 94); /* Brighter orange on hover */
-}
-
-#link_1 {
-    grid-area: link_a;
-}
-
-#link_2 {
-    grid-area: link_b;
-}
-
-#link_3 {
-    grid-area: link_c;
-}
-
-#link_4 {
-    grid-area: link_d;
 }
 
 /* Footer section */
@@ -176,10 +118,11 @@ footer {
     width: 100%;
     text-align: center;
     color: #5c4033; /* Dark brown text */
-    border-top: 4px solid #d97d0d; /* Top border */
-    border-bottom: 4px solid #d97d0d; /* Bottom border */
+    border-top: 6px solid #d97d0d; /* Top border */
+    border-bottom: 6px solid #d97d0d; /* Bottom border */
     padding: 20px 0;
     background-color: transparent;
+    margin-top: auto; /* Ensure footer is pushed to the bottom */
 }
 
 .foot-nav {
