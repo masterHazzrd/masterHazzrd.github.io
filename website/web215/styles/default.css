@@ -12,53 +12,27 @@
     font-style: normal;
 }
 
-/* General page layout (common to all pages) */
+/* General page layout using Flexbox */
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
 }
 
-/* Home page layout */
-body.home-page {
-    max-width: 1920px;
-    max-height: 1200px;
-    margin: 0 auto; /* Centering the page horizontally */
-    display: grid;
-    grid-template-columns: 5% 31.5% 31.5% 31.5%;
-    grid-template-rows: 225px auto 95px;
-    grid-template-areas: "header header header header"
-                         "main main main main"
-                         "footer footer footer footer";
-    gap: 5px;
-    overflow: hidden; /* Prevent scrollbars for home page */
-}
-
-/* intro.html layout */
-body.intro-page {
-    display: grid;
-    grid-template-columns: 5% 90% 5%;
-    grid-template-rows: auto 1fr auto; /* Adjust grid rows to ensure footer sticks to bottom */
-    grid-template-areas: 
-        "header header header"
-        "main main main"
-        "footer footer footer";
-    min-height: 100vh; /* Make sure it fills the viewport */
-    overflow-y: auto; /* Allow scrolling on intro.html */
+body {
+    display: flex;
+    flex-direction: column; /* Column layout: header, main, footer */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
 }
 
 /* Header section */
 header {
-    grid-area: header;
     text-align: center;
-    padding: 20px 0; /* Add padding to the header */
+    padding: 20px;
 }
 
 header h1, header h2 {
-    margin: 0 auto;
-    text-align: center;
-    display: block;
-    width: 100%;
+    margin: 0;
 }
 
 header h1 {
@@ -73,8 +47,9 @@ header h2 {
 
 /* Main section */
 main {
-    grid-area: main;
+    flex: 1; /* Make the main section grow to fill the available space */
     padding: 20px;
+    background-color: #f9e79f;
 }
 
 main h2 {
@@ -83,16 +58,15 @@ main h2 {
     color: #d97d0d; /* Darker orange for the sub-header */
 }
 
-/* Specific styles for intro.html */
+/* Content container inside main */
 #m_container {
-    display: grid;
-    grid-template-columns: 29.25% 69.25%;
-    grid-template-rows: auto;
-    grid-template-areas: "m_img m_content";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #m_img {
-    grid-area: m_img;
+    flex: 1;
     text-align: center;
 }
 
@@ -101,7 +75,7 @@ main h2 {
 }
 
 #m_content {
-    grid-area: m_content;
+    flex: 2;
     text-align: justify;
     font-size: 16px;
     padding: 10px;
@@ -114,15 +88,13 @@ main h2 {
 
 /* Footer section */
 footer {
-    grid-area: footer;
-    width: 100%;
     text-align: center;
     color: #5c4033; /* Dark brown text */
     border-top: 6px solid #d97d0d; /* Top border */
     border-bottom: 6px solid #d97d0d; /* Bottom border */
-    padding: 20px 0;
+    padding: 20px;
     background-color: transparent;
-    margin-top: auto; /* Ensure footer is pushed to the bottom */
+    margin-top: auto; /* Push footer to the bottom when there isn't enough content */
 }
 
 .foot-nav {
