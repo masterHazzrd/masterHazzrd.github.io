@@ -62,36 +62,41 @@ main h2 {
 #index_link_area {
     display: flex;
     justify-content: center; /* Center the links horizontally */
-    gap: 20px; /* Space between the buttons */
+    gap: 85px; /* Space between the buttons */
     margin-bottom: 20px; /* Margin below the navigation buttons */
 }
 
 #index_link_area div {
     background-color: rgba(240, 177, 94, 0.4); /* Light fall orange background */
-    padding: 10px 20px;
+    padding: 8px 25px;
     border-radius: 10px;
 }
 
 #index_link_area div a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #5c4033; /* Dark brown text */
+    color: #5c4033; 
+    background-color: transparent;
 }
 
 #index_link_area div:hover {
-    background-color: rgb(240, 177, 94); /* Brighter orange on hover */
+    background-color: rgb(240, 177, 94);
 }
 
 /* Paragraph section */
 #index_main_para {
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 20px;
-    color: #5c4033; /* Dark brown text */
+    margin: 150px 75px;
+    color: #5c4033;
 }
 
 #index_main_para strong {
-    text-shadow: 0px 1px 3px #FF4500; /* Red-orange shadow for emphasis */
+    text-shadow: 
+    -1px 1px 2px #FF4500,  /* Red-orange shadow for emphasis */
+    -2px 2px 3px #E03E00,  /* Slightly darker red-orange for depth */
+    -3px 3px 3px #C03800;  /* Darker shadow layer for more depth */
+    
 }
 
 #index_main_para a {
