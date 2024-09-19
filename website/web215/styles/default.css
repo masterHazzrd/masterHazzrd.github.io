@@ -133,6 +133,8 @@ main h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 #m_img {
@@ -141,7 +143,9 @@ main h2 {
 }
 
 #m_img img {
-    max-width: 70%;    
+    max-width: 70%;
+    height: auto; /* Ensure the image scales proportionally */
+    margin-bottom: 20px; /* Add margin to separate the image from the paragraph */
 }
 
 #m_content {
@@ -155,6 +159,25 @@ main h2 {
     list-style-type: none; /* Remove bullets */
     padding: 6px 12px;
 }
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+    #m_container {
+        flex-direction: column; /* Stack the image above the paragraph */
+        align-items: center; /* Center the content vertically */
+    }
+
+    #m_img img {
+        max-width: 55%; /* Make the image take up more space on smaller screens */
+        padding-top: 25px;
+    }
+
+    #m_content {
+        text-align: left; /* Center text on smaller screens */
+        padding: 10px 15px; /* Adjust padding for better spacing */
+    }
+}
+
 
 /* Footer section */
 footer {
