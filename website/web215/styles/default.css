@@ -111,15 +111,17 @@ main h2 {
 }
 
 #index_main_para strong, 
-#m_content strong {
+#m_content strong,
+.text_box strong {
     text-shadow: 
-    -1px 1px 2px #FF4500,  /* Red-orange shadow for emphasis */
-    -2px 2px 3px #E03E00,  /* Slightly darker red-orange for depth */
+    -1px 1px 1px #FF4500,  /* Red-orange shadow for emphasis */
+    -2px 2px 2px #E03E00,  /* Slightly darker red-orange for depth */
     -3px 3px 3px #C03800;  /* Darker shadow layer for more depth */
 }
 
 
-#index_main_para a {
+#index_main_para a,
+.text_box a {
     color: rgba(224, 159, 62, 0.7); /* Yellow-orange for links */
     text-decoration: none;
 }
@@ -178,6 +180,29 @@ main h2 {
     }
 }
 
+/* Styling for contract page */
+.text_box ol {
+    padding-left: 20px; /* Adds padding to the left for ordered list */
+    text-align: justify;
+}
+
+.text_box ol li {
+    padding: 10px 0; /* Adds padding above and below each list item */
+    margin: 10px 125px; /* Adds margin between each list item for better spacing */
+    list-style-type: decimal; /* Ensures it's a numbered list */
+    font-size: 1.1rem; /* Optional: Adjust font size if needed */
+}
+
+.text_box ol li:last-child {
+    margin-bottom: 0; /* Removes extra margin for the last item */
+}
+
+.text_box p {
+    padding-top: 15px; /* Adds space between the last list item and the signature */
+    font-size: 1.25rem; /* Adjusts the size of the signature text */
+    text-align: center; /* Centers the paragraph text */
+    font-style: italic; /* Makes the text italic */
+}
 
 /* Footer section */
 footer {
