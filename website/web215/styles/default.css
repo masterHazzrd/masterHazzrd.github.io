@@ -207,9 +207,9 @@ main h2 {
 /* Footer section */
 footer {
     text-align: center;
-    color: #5c4033; /* Dark brown text */
-    border-top: 6px solid #d97d0d; /* Top border */
-    border-bottom: 6px solid #d97d0d; /* Bottom border */
+    color: #edddd4; /* Light beige text to match the page */
+    border-top: 6px solid #772e25; /* Dark brown top border to match the color scheme */
+    border-bottom: 6px solid #772e25; /* Dark brown bottom border */
     padding: 20px;
     background-color: transparent;
     margin-top: auto; /* Push footer to the bottom when there isn't enough content */
@@ -220,7 +220,7 @@ footer {
 }
 
 .foot-nav a {
-    color: #f4a261; /* Bright fall orange for footer links */
+    color: #197278; /* Original teal color for footer links */
     text-align: center;
     text-decoration: none;
     font-size: clamp(.425rem, 3vw, .85rem);
@@ -238,5 +238,6 @@ footer {
 }
 
 .foot-nav a:hover {
-    text-shadow: 0px 1px 3px #e09f3e; /* Yellow-orange shadow on hover */
+    text-shadow: 0px 1px 3px #283d3b; /* Darker shadow on hover to match page tone */
 }
+
