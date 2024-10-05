@@ -120,6 +120,10 @@ main {
 }
 
 /* Color Palette Section */
+.color_palette h2 {
+    text-align: center;
+    }
+
 .color_palette ul {
     list-style-type: none;
     display: flex;
@@ -132,8 +136,14 @@ main {
     width: 130px;
     height: 130px;
     border-radius: 10px;
-    border: 3px solid #772e25; /* Add border around the colors */
+    border: 3px solid #000; /* Add border around the colors */
     background: none; /* Transparent background */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Horizontally center text */
+    align-items: center; /* Vertically center text */
+    text-align: center; /* Align the text within the element */
+    font-size: 1.5rem; /* Increase text size */
+    color: #000; /* Dark brown text color */
 }
 
 /* Footer section */
