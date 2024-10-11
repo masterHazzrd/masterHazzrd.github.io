@@ -336,9 +336,13 @@ legend {
     background-color: transparent;
 }
 
+/* General label styling */
 label {
     background-color: #fcecb1;
     padding: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #5c4033; /* Dark brown text */
 }
 
 /* Input fields styling */
@@ -363,8 +367,52 @@ div[contenteditable="true"] {
     border-radius: 5px;
 }
 
-/* Padding for labels */
-label {
+/* Checkbox container */
+.checkbox_container {
+    display: flex;
+    justify-content: space-between; /* Evenly spaced checkboxes */
+    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
+    gap: 10px; /* Adds space between the checkboxes */
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+/* Radio container */
+.radio_container {
+    display: flex;
+    justify-content: space-around; /* Evenly spaced radio buttons */
+    flex-wrap: wrap; /* Allows wrapping if necessary */
+    gap: 10px;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+/* Checkbox and radio button styling */
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Label for checkboxes and radio buttons */
+.checkbox_container label, .radio_container label {
+    color: #5c4033; /* Maintain the dark brown text */
     display: inline-block;
-    margin-bottom: 5px;
+}
+
+/* Submit button styling */
+#submit_button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5c4033;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Centering the submit button */
+.submit-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: transparent;
 }

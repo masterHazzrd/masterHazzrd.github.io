@@ -80,7 +80,37 @@
                     <label for="current_courses">Course ID:</label>
                     <input type="text" id="course_1" name="course_1" value="CTS118-N801 IS Professional Comm: Required for degree." required>
                     <br><br>
-                    <input type="submit" value="Submit Form" id="submit_button" style="padding: 10px 20px; font-size: 16px; background-color: #5c4033; color: #fff; border: none; cursor: pointer; border-radius: 5px;">
+                    <label for="student_type">Are you a traditional or non-traditional student?</label>
+                    <div class="radio_container">
+                        <input type="radio" id="traditional" name="student_type" value="traditional" required>
+                        <label for="traditional">Traditional Student</label>
+
+                        <input type="radio" id="non_traditional" name="student_type" value="non_traditional" required>
+                        <label for="non_traditional">Non-traditional Student</label>
+                    </div>
+                    <br><br>
+                    
+                    <label for="study_preferences">Select your study preferences/habits:</label>
+                    <div class="checkbox_container">
+                        <input type="checkbox" id="study_group" name="study_preferences" value="Study Group">
+                        <label for="study_group">Study Group</label>
+
+                        <input type="checkbox" id="online_classes" name="study_preferences" value="Online Classes">
+                        <label for="online_classes">Online Classes</label>
+
+                        <input type="checkbox" id="part_time" name="study_preferences" value="Part-time Student">
+                        <label for="part_time">Part-time Student</label>
+
+                        <input type="checkbox" id="full_time" name="study_preferences" value="Full-time Student">
+                        <label for="full_time">Full-time Student</label>
+
+                        <input type="checkbox" id="night_classes" name="study_preferences" value="Night Classes">
+                        <label for="night_classes">Night Classes</label>
+                    </div>
+                    <div class="submit-container">
+                        <input type="submit" value="Submit Form" id="submit_button">
+                    </div>
+                    <br><br>
                 </fieldset>
             </form>            
         </div>
