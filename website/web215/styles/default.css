@@ -315,3 +315,56 @@ footer {
         height: 80px;
     }
 }
+
+/* Form container */
+#form_container {
+    margin: 20px;
+}
+
+/* Fieldset styling */
+fieldset {
+    padding: 20px;
+    border: 2px solid #f7d689;
+    border-radius: 5px;
+    background-color: #fcecb1;
+}
+
+/* Legend styling */
+legend {
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+}
+
+label {
+    background-color: #fcecb1;
+    padding: 20px;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="email"] {
+    width: 675px;
+    padding: 10px;
+    border: none;
+    background-color: #fff9d4; /* Lighter shade of the light yellow */
+    color: #5c4033; /* Dark brown text */
+    border-radius: 5px;
+}
+
+/* Editable div styling */
+div[contenteditable="true"] {
+    width: 95%;
+    height: 125px;
+    padding: 10px 15px;
+    text-align: justify;
+    overflow: auto;
+    background-color: #fff9d4; /* Lighter shade of the light yellow */
+    color: #5c4033; /* Dark brown text */
+    border-radius: 5px;
+}
+
+/* Padding for labels */
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}

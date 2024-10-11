@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jocular Grit | WEB215 | Introduction</title>
+    <title>Jocular Grit | WEB215 | Introduction Form</title>
     <link rel="stylesheet" type="text/css" href="/website/web215/styles/default.css">
 </head>
 
@@ -24,59 +24,65 @@
     </nav>
 
     <main>
-        <h2>Introduction</h2>
-        <div id="m_container">
-            <div id="m_img">
-                <figure>
-                    <img src="/website/web215/images/concert.jpg" alt="My wife and I at a concert prepandemic">
-                    <figcaption>My wife and I at a concert prepandemic</figcaption>
-                </figure>
-            </div>
-            <div id="m_content">
-                <ul>
-                    <li>
-                        <strong>Personal Background:</strong>
-                        <br><br>Hey there, I’m John Gallagher. Born in Tucson, AZ, I moved to Matthews, NC, at 12 and eventually joined the Army—because why not go big, right? Growing up as a late Gen Xer, I saw 
-                        the world go from no computers to too many to count. Somewhere along the way, I got hooked on early websites and thought, “Hey, I could do that!”<br><br> Life happened (including four 
+        <h2>Introduction Form</h2>
+        <div id="form_container">
+            <form id="intro_form">
+                <fieldset>
+                    <legend>Personal Information</legend><br>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="John M. Gallagher Jr." required style="width: 450px; border: none;">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" value="user@cpcc.email.edu" required style="width: 450px; border: none;">
+                    <br><br>
+                    <label for="personal_bkgrd">Personal Background:</label>
+                    <div id="personal_bkgrd" name="personal_bkgrd" contenteditable="true" style="width: 95%; height: 125px; text-align: justify; padding: 10px 15px; overflow: auto;">
+                        Hey there, I’m John Gallagher. Born in Tucson, AZ, I moved to Matthews, NC, at 12 and eventually joined the Army—because why not go big, right? Growing up as a late Gen Xer, I saw 
+                        the world go from no computers to too many to count. Somewhere along the way, I got hooked on early websites and thought, “Hey, I could do that!” Life happened (including four 
                         amazing kids and a stint in the military), but my love for coding stuck around. During my first deployment, a buddy suggested I try building a webpage, and boom—my interest in web 
-                        development was born. I taught myself a little HTML and CSS but had to put the deep dive on hold to handle, well, life.<br><br> Now, after working everywhere from McDonald’s to IT in the 
+                        development was born. I taught myself a little HTML and CSS but had to put the deep dive on hold to handle, well, life. Now, after working everywhere from McDonald’s to IT in the 
                         Army, I’m back, ready to finish my degree and make web development my next big adventure.
-                    </li>
-                    <li>
-                        <strong>Academic background:</strong>
-                        <br><br>Academically, I’ve been on quite the adventure. I’m currently working on my A.A.S. in Software Development and a Web Development Certificate at Central Piedmont Community College, set to 
+                    </div>
+                    <br><br>
+                    <label for="academic_bckgrd">Academic background:</label>
+                    <div id="academic_bckgrd" name="academic_bckgrd" contenteditable="true" style="width: 95%; height: 125px; text-align: justify; padding: 10px 15px; overflow: auto;">
+                        Academically, I’ve been on quite the adventure. I’m currently working on my A.A.S. in Software Development and a Web Development Certificate at Central Piedmont Community College, set to 
                         graduate in Spring 2025 (fingers crossed). Before that, I bounced between degrees in Computer Science, History, and Political Science at UNCC—because why settle for one challenge when you 
-                        can juggle three?<br><br> While my academic journey hasn’t exactly paved the way for a career in web development, it’s definitely taught me that I can learn just about anything if I set my mind to 
+                        can juggle three? While my academic journey hasn’t exactly paved the way for a career in web development, it’s definitely taught me that I can learn just about anything if I set my mind to 
                         it. Now, I’m excited to finally dive into building websites and mastering the backend code that gives every site its unique flair.
-
-                    </li>
-                    <li>
-                        <strong>Background in this subject:</strong>
-                        <br><br>I’ve always been intrigued by the evolution of technology, from barely having a computer in the house to watching the internet take over. During my first Army deployment, a battle buddy 
+                    </div>
+                    <br><br>
+                    <label for="subject_bckgrd">Academic background:</label>
+                    <div id="subject_bckgrd" name="subject_bckgrd" contenteditable="true" style="width: 95%; height: 125px; text-align: justify; padding: 10px 15px; overflow: auto;">
+                        I’ve always been intrigued by the evolution of technology, from barely having a computer in the house to watching the internet take over. During my first Army deployment, a battle buddy 
                         suggested I learn to code, so naturally, I dabbled in HTML and CSS between missions. Life, family, and four kids later, I put coding on hold, but that itch never went away. Now, after 
                         stints in everything from flipping burgers to fixing networks, I’m back at it, working on my A.A.S. in Software Development and a Web Development Certificate. My goal? To finally master 
                         the magic of building websites, one line of code at a time, and make something cool enough to show off to my kids.
-                    </li>
-                    <li>
-                        <strong>Primary Computer Platform:</strong>
-                        <br><br>PC , Windows and Ubuntu, and a Laptop
-                    </li>
-                        <li>
-                            <strong>Courses I'm in & Why:</strong>
-                            <ul><br>
-                                <li>
-                                    CTS118-N801 <strong>IS Professional Comm</strong>: Requied for degree.
-                                </li>
-                                <li>
-                                    WEB140-N801 <strong>Web Development Tools</strong>: Requied for degree.
-                                </li>
-                                <li>
-                                    WEB215-N801 <strong>Adv Markup & Scripting</strong>: To further my knowledge on building unique website with pazazz.
-                                </li>
-                            </ul>
-                        </li>
-                </ul>
-            </div>
+                    </div>
+                    <br><br>
+                    <label for="primary_platform_used">Primary Computer Platform:</label><br>
+                    <input type="text" id="primary_platform_used" name="primary_platform_used" value="PC , Windows and Ubuntu, and a Laptop" required style="width: 450px; border: none;">
+                    <br><br><br><br>
+                    <label for="current_courses">Courses I'm in & Why:</label>
+                    <br>
+                    <label for="current_courses">Course ID:</label>
+                    <input type="text" id="course_1" name="course_1" value="CTS118-N801 IS Professional Comm: Required for degree." required>
+                    <br><br>
+                    <label for="current_courses">Course ID:</label>
+                    <input type="text" id="course_1" name="course_1" value="WEB140-N801 Web Development Tools: Requied for degree." required>
+                    <br><br>
+                    <label for="current_courses">Course ID:</label>
+                    <input type="text" id="course_1" name="course_1" value="WEB215-N801 Adv Markup & Scripting: To further my knowledge on building unique website with pazazz." required>
+                    <br><br>
+                    <label for="current_courses">Course ID:</label>
+                    <input type="text" id="course_1" name="course_1" value="CTS118-N801 IS Professional Comm: Required for degree." required>
+                    <br><br>
+                    <label for="current_courses">Course ID:</label>
+                    <input type="text" id="course_1" name="course_1" value="CTS118-N801 IS Professional Comm: Required for degree." required>
+                    <br><br>
+                    <input type="submit" value="Submit Form" id="submit_button" style="padding: 10px 20px; font-size: 16px; background-color: #5c4033; color: #fff; border: none; cursor: pointer; border-radius: 5px;">
+                </fieldset>
+            </form>            
         </div>
     </main>
 
