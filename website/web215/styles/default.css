@@ -359,7 +359,7 @@ label {
 }
 
 /* ============================================================= */
-/* FOOTER STYLES */
+/* FOOTER STYLES FOR GENERAL PAGES */
 /* ============================================================= */
 
 footer {
@@ -395,6 +395,45 @@ footer {
 
 .foot-nav a:hover {
     text-shadow: 0px 1px 3px #283d3b; /* Darker shadow on hover to match page tone */
+}
+
+/* ============================================================= */
+/* FOOTER STYLES FOR BRAND PAGE */
+/* ============================================================= */
+
+footer.brand-footer {
+    text-align: center;
+    color: #edddd4; /* Light beige text */
+    border-top: 6px solid #772e25; /* Dark brown top border */
+    border-bottom: 6px solid #772e25; /* Dark brown bottom border */
+    padding: 20px;
+    background-color: transparent;
+    margin-top: auto; /* Push footer to the bottom when content is low */
+}
+
+.foot-nav.brand-nav {
+    overflow: hidden;
+}
+
+.foot-nav.brand-nav a {
+    color: #197278; /* Original teal color for footer links */
+    text-align: center;
+    text-decoration: none;
+    font-size: clamp(.425rem, 3vw, .85rem);
+}
+
+.foot-nav.brand-nav a.push-left {
+    float: left;
+    margin-left: 15px; /* Bring the left validation button in by 15px */
+}
+
+.foot-nav.brand-nav a.push-right {
+    float: right;
+    margin-right: 15px; /* Bring the right validation button in by 15px */
+}
+
+.foot-nav.brand-nav a:hover {
+    text-shadow: 0px 1px 3px #283d3b; /* Darker shadow on hover */
 }
 
 /* ============================================================= */
