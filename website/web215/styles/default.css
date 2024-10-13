@@ -481,7 +481,7 @@ footer {
 
 /* Styling for the submitted data display */
 #submittedData {
-    display: none;
+    display: block;
     width: 95%;
     margin: 20px auto;
     padding: 20px;
@@ -516,9 +516,20 @@ footer {
     list-style-type: disc;
     color: #5c4033;
     background-color: transparent;
-    list-style-type: none;
 }
 
 #submittedData strong {
     background-color: transparent;
+}
+
+/* Styling for the reset button */
+#resetButton {
+    padding: 10px 20px;
+    background-color: #5c4033; /* Dark brown background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; /* Center the button */
 }

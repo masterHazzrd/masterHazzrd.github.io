@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("intro_form");
-    
+
     // Store the original page content
     const originalContent = document.body.innerHTML;
 
@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", function() {
             studyPreferences.push(checkbox.value);
         });
 
-        // Replace the entire page content (body) with the submitted data
+        // Replace the entire page content with the submitted data and a reset button
         document.body.innerHTML = `
-            <div style="width: 95%; margin: 20px auto; padding: 20px; border: 2px solid #f7d689; border-radius: 5px; background-color: #fcecb1; color: #5c4033; font-family: 'Allerta Stencil', sans-serif;">
-                <h3 style="text-align: center; font-size: 1.5rem; color: #d97d0d;">Submitted Information</h3><br><br>
+            <div id="submittedData">
+                <h3>Submitted Information</h3><br><br>
                 <p><strong>Name:</strong> ${name}</p><br>
                 <p><strong>Email:</strong> ${email}</p><br>
                 <p><strong>Personal Background:</strong> ${personalBkgrd}</p><br>
@@ -49,16 +49,16 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p><strong>Current Courses:</strong></p>
                 <ul>${formattedCourses}</ul><br>
                 <p><strong>Student Type:</strong> ${studentType}</p><br>
-                <p><strong>Study Preferences:</strong> ${studyPreferences.join(', ')}</p>
-                <br><br>
-                <button id="resetButton" style="padding: 10px 20px; background-color: #5c4033; color: white; border: none; border-radius: 5px; cursor: pointer;">Reset</button>
+                <p><strong>Study Preferences:</strong> ${studyPreferences.join(', ')}</p><br><br>
+                
+                <button id="resetButton">Reset</button>
             </div>
         `;
 
-        // Add event listener to the reset button
+        // Reattach the event listener for resetting the form to its original state
         document.getElementById("resetButton").addEventListener("click", function() {
             document.body.innerHTML = originalContent; // Restore the original content
-            location.reload(); // Reload the page to reinitialize the event listeners
+            location.reload(); // Reload the page to reinitialize all event listeners
         });
     });
 });
