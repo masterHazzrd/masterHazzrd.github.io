@@ -459,6 +459,9 @@ footer {
     header h2 {
         font-size: 1.25rem;
     }
+    nav {
+        flex-direction: column; /* Stack navigation links vertically */
+    }
     nav div a {
         font-size: 1rem; /* Smaller font for nav */
     }
