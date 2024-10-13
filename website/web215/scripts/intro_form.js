@@ -1,45 +1,55 @@
-// Wait for the DOM content to be fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-    // Select the form by its ID
     const form = document.getElementById("intro_form");
 
-    // Add an event listener to capture form submission
     form.addEventListener("submit", function(event) {
-        // Prevent the form from submitting the traditional way
-        event.preventDefault();
+        event.preventDefault(); // Prevent default form submission
 
-        // Capture the values from the form fields
+        // Capture form values
         const name = document.getElementById("name").value;
         const email = document.getElementById("email").value;
-        const personal_bkgrd = document.getElementById("personal_bkgrd").textContent;
-        const academic_bkgrd = document.getElementById("academic_bckgrd").textContent;
+        const personalBkgrd = document.getElementById("personal_bkgrd").textContent;
+        const academicBkgrd = document.getElementById("academic_bckgrd").textContent;
+        const subjectBkgrd = document.getElementById("subject_bckgrd").textContent;
         const platform = document.getElementById("primary_platform_used").value;
-        const course1 = document.getElementById("current_courses_1").value;
 
-        // Radio buttons - student type
+        // Capture current courses
+        const currentCourses = [
+            document.getElementById("current_courses_1").value,
+            document.getElementById("current_courses_2").value,
+            document.getElementById("current_courses_3").value,
+            document.getElementById("current_courses_4").value,
+            document.getElementById("current_courses_5").value
+        ];
+
+        // Map current courses to an unordered list format
+        const formattedCourses = currentCourses.map(course => `<li>${course}</li>`).join('');
+
+        // Capture student type (radio button)
         const studentType = document.querySelector('input[name="student_type"]:checked').value;
 
-        // Collecting checkbox values (study preferences)
+        // Capture study preferences (checkboxes)
         const studyPreferences = [];
         document.querySelectorAll('input[name="study_preferences"]:checked').forEach((checkbox) => {
             studyPreferences.push(checkbox.value);
         });
 
-        // Format the submitted data to display at the bottom of the page
+        // Display the captured information
         const displayDiv = document.getElementById("submittedData");
         displayDiv.innerHTML = `
-            <h3>Submitted Information</h3>
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Email:</strong> ${email}</p>
-            <p><strong>Personal Background:</strong> ${personal_bkgrd}</p>
-            <p><strong>Academic Background:</strong> ${academic_bkgrd}</p>
-            <p><strong>Primary Computer Platform:</strong> ${platform}</p>
-            <p><strong>First Course:</strong> ${course1}</p>
-            <p><strong>Student Type:</strong> ${studentType}</p>
-            <p><strong>Study Preferences:</strong> ${studyPreferences.join(", ")}</p>
+            <h3>Submitted Information</h3><br><br>
+            <p><strong>Name:</strong> ${name}</p><br>
+            <p><strong>Email:</strong> ${email}</p><br>
+            <p><strong>Personal Background:</strong> ${personalBkgrd}</p><br>
+            <p><strong>Academic Background:</strong> ${academicBkgrd}</p><br>
+            <p><strong>Subject Background:</strong> ${subjectBkgrd}</p><br>
+            <p><strong>Primary Platform:</strong> ${platform}</p><br>
+            <p><strong>Current Courses:</strong></p>
+            <ul>${formattedCourses}</ul><br>
+            <p><strong>Student Type:</strong> ${studentType}</p><br>
+            <p><strong>Study Preferences:</strong> ${studyPreferences.join(', ')}</p>
         `;
 
-        // Optionally clear the form after submission
+        // Optionally reset the form after submission
         form.reset();
     });
 });

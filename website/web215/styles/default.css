@@ -311,21 +311,23 @@ div[contenteditable="true"] {
 /* Checkbox container */
 .checkbox_container {
     display: flex;
-    justify-content: space-between; /* Evenly spaced checkboxes */
-    flex-wrap: wrap; /* Allows wrapping to the next line if necessary */
-    gap: 10px; /* Adds space between the checkboxes */
+    flex-wrap: wrap; /* Allows items to wrap onto new lines if needed */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Adds space between checkboxes */
     margin-top: 10px;
     background-color: transparent;
+    align-items: center; /* Align items vertically in the center */
 }
 
 /* Radio container */
 .radio_container {
     display: flex;
-    justify-content: space-around; /* Evenly spaced radio buttons */
-    flex-wrap: wrap; /* Allows wrapping if necessary */
-    gap: 10px;
+    flex-wrap: wrap; /* Allows items to wrap onto new lines if needed */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 20px; /* Adds space between radio buttons */
     margin-top: 10px;
     background-color: transparent;
+    align-items: center; /* Align items vertically in the center */
 }
 
 input[type="checkbox"], input[type="radio"] {
@@ -335,8 +337,11 @@ input[type="checkbox"], input[type="radio"] {
 label {
     color: #5c4033; /* Maintain the dark brown text */
     display: inline-block;
+    margin-left: 5px; /* Add slight margin to space out the label from input */
+    font-size: 1rem;
 }
 
+/* Submit button styling */
 #submit_button {
     padding: 10px 20px;
     font-size: 16px;
