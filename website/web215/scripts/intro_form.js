@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById("intro_form");
+    const mainContent = document.querySelector("main");
+    const submittedDataDiv = document.getElementById("submittedData");
 
-    // Store the original page content
-    const originalContent = document.body.innerHTML;
+    // Initially hide the submitted data section
+    submittedDataDiv.style.display = "none";
 
     form.addEventListener("submit", function(event) {
         event.preventDefault(); // Prevent default form submission
@@ -36,8 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
             studyPreferences.push(checkbox.value);
         });
 
-        // Replace the entire page content with the submitted data and a reset button
-        document.body.innerHTML = `
+        // Replace only the main content (not the entire page)
+        mainContent.innerHTML = `
             <div id="submittedData">
                 <h3>Submitted Information</h3><br><br>
                 <p><strong>Name:</strong> ${name}</p><br>
@@ -55,10 +57,15 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
         `;
 
-        // Reattach the event listener for resetting the form to its original state
+        // Add event listener to the reset button to return to the original form
         document.getElementById("resetButton").addEventListener("click", function() {
-            document.body.innerHTML = originalContent; // Restore the original content
-            location.reload(); // Reload the page to reinitialize all event listeners
+            submittedDataDiv.style.display = "none"; // Hide submitted data section
+            form.reset(); // Reset form fields
+            mainContent.innerHTML = ""; // Clear the main content
+            mainContent.appendChild(form); // Re-add the original form back to the main content
         });
+
+        // Show the submitted data
+        submittedDataDiv.style.display = "block";
     });
 });
