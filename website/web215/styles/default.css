@@ -478,3 +478,47 @@ footer {
         height: 80px;
     }
 }
+
+/* Styling for the submitted data display */
+#submittedData {
+    display: none;
+    width: 95%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #f7d689; /* Same border color as the form */
+    border-radius: 5px;
+    background-color: #fcecb1; /* Same background color as the form */
+    color: #5c4033; /* Same text color */
+    text-align: justify;
+    font-family: "Allerta Stencil", sans-serif; /* Match the font family of the form */
+}
+
+#submittedData h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #d97d0d; /* Fall orange for the section header */
+    background-color: transparent;
+}
+
+#submittedData p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+#submittedData ul {
+    padding-left: 20px;
+    background-color: transparent;
+}
+
+#submittedData li {
+    margin: 5px 0;
+    list-style-type: disc;
+    color: #5c4033;
+    background-color: transparent;
+    list-style-type: none;
+}
+
+#submittedData strong {
+    background-color: transparent;
+}
