@@ -516,6 +516,7 @@ footer {
     list-style-type: disc;
     color: #5c4033;
     background-color: transparent;
+    list-style-type: none; /* Remove bullets */
 }
 
 #submittedData strong {
