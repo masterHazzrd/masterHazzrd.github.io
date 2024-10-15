@@ -234,13 +234,13 @@ label {
 
 body.brand {
     background-color: #F26724; /* Maintain page background */
-    color: #772e25; /* Maintain text color */
+    /*color: #571C1E; /* Maintain text color */
     
 }
 
 header.brand h1, header.brand h2, main.brand h1, main.brand h2 {
     font-family: "Amatic SC", sans-serif;
-    color: #772e25;
+    color: #571C1E;
     text-align: center;
 }
 
@@ -249,16 +249,16 @@ main.brand {
 }
 
 nav.brand div a {
-    background-color: rgba(25, 114, 120, 0.5);
-    color: rgba(237, 221, 212, 0.5);
+    background-color: rgba(197, 231, 94, 0.7); /* Lighter shade with 70% opacity */
+    transition: background-color 0.3s ease; /* Smooth transition */
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: 10px;
 }
 
 nav.brand div a:hover {
-    background-color: #197278;
-    color: #edddd4;
+    background-color: #A7CD3A;
+    color: #fff;
 }
 
 .logo_container {
@@ -292,21 +292,20 @@ nav.brand div a:hover {
 .color_palette ul {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center; /* Align items more closely to the center */
+    gap: 50px; /* Reduce the gap between elements */
     background: none;
 }
 
 .color_palette ul li {
-    width: 130px;
-    height: 130px;
+    width: 120px; /* Reduce size if needed to make them closer */
+    height: 120px;
     border-radius: 10px;
-    border: 3px solid #000;
+    border: 2px solid #000;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center content within each item */
     align-items: center;
     font-size: 1.5rem;
-    color: #000;
 }
 
 /* ============================================================= */
