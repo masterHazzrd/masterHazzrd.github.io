@@ -37,6 +37,10 @@ header {
     padding: 20px;
 }
 
+header h1, header h2, main h1, main h2, footer p, .font_container p.amatic {
+    text-align: center;
+}
+
 header h1 {
     font-size: 4rem;
     color: #e09f3e; /* Bright fall yellow-orange */
@@ -112,7 +116,6 @@ main {
 }
 
 main h2 {
-    text-align: center;
     font-size: 2rem;
     color: #d97d0d;
 }
@@ -121,53 +124,55 @@ main h2 {
 #m_container {
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
-    align-items: center; /* Center content vertically */
+    justify-content: space-evenly;
+    align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
-    width: 90%; /* Reduce width slightly for better alignment */
-    margin: 20px auto; /* Center the container with vertical spacing */
-    padding: 20px 0; /* Add top and bottom padding for better spacing */
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
 }
 
-/* Image container styling */
+/* Image and content container styling */
+#m_content, #m_img {
+    padding: 10px;
+}
+
+#m_content {
+    flex: 2;
+    max-width: 55%;
+    text-align: justify;
+    font-size: 1rem;
+}
+
 #m_img {
     flex: 1;
-    max-width: 45%; /* Limit image width to 40% of the container */
-    padding: 20px auto; /* Add top and bottom padding to create even space */
+    max-width: 45%;
 }
 
 #m_img img {
     width: 90%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: Add rounded corners to the image */
+    height: auto;
+    border-radius: 10px;
 }
 
-/* Content container styling */
-#m_content {
-    flex: 2;
-    max-width: 55%; /* Limit content width to 55% of the container */
-    text-align: justify;
-    font-size: 1rem; /* Adjust font size for better readability */
-    padding: 10px;
-}
-
+/* Content styling for lists */
 #m_content ul {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
     padding-left: 0;
 }
 
 #m_content li {
-    margin-bottom: 15px; /* Add space between list items */
+    margin-bottom: 15px;
 }
 
 #m_content li ul {
-    list-style: disc; /* Add bullets for nested list */
-    padding-left: 20px; /* Indent nested list */
+    list-style: disc;
+    padding-left: 20px;
 }
 
 #m_content li ul li {
-    margin-bottom: 5px; /* Space between nested list items */
+    margin-bottom: 5px;
 }
 
 /* ============================================================= */
@@ -238,6 +243,8 @@ label {
     margin-bottom: 5px;
     color: #5c4033;
     display: inline-block;
+    font-size: 1rem;
+    margin-left: 5px;
 }
 
 input[type="text"], input[type="email"] {
@@ -273,11 +280,6 @@ input[type="checkbox"], input[type="radio"] {
     margin-right: 15px;
 }
 
-label {
-    font-size: 1rem;
-    margin-left: 5px;
-}
-
 #submit_button {
     padding: 10px 20px;
     background-color: #5c4033;
@@ -298,9 +300,7 @@ label {
 /* ============================================================= */
 
 body.brand {
-    background-color: #F26724; /* Maintain page background */
-    /*color: #571C1E; /* Maintain text color */
-    
+    background-color: #F26724;
 }
 
 header.brand h1, header.brand h2, main.brand h1, main.brand h2 {
@@ -314,8 +314,8 @@ main.brand {
 }
 
 nav.brand div a {
-    background-color: rgba(197, 231, 94, 0.7); /* Lighter shade with 70% opacity */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: rgba(197, 231, 94, 0.7);
+    transition: background-color 0.3s ease;
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: 10px;
@@ -353,24 +353,28 @@ nav.brand div a:hover {
     font-family: "Architects Daughter";
 }
 
-/* Color Palette Section */
 .color_palette ul {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Align items more closely to the center */
-    gap: 50px; /* Reduce the gap between elements */
+    justify-content: center;
+    gap: 50px;
     background: none;
 }
 
 .color_palette ul li {
-    width: 120px; /* Reduce size if needed to make them closer */
+    width: 120px;
     height: 120px;
     border-radius: 10px;
     border: 2px solid #000;
     display: flex;
-    justify-content: center; /* Center content within each item */
+    justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+}
+
+footer.brand a{
+    color: #A7CD3A;
+    text-shadow: #FFFFFF;
 }
 
 /* ============================================================= */
@@ -400,7 +404,7 @@ footer p {
 }
 
 .foot-nav a:hover {
-    text-shadow: 0px 1px 3px #283d3b;
+    text-shadow: 0px 1px 3px #FF4500;
 }
 
 /* ============================================================= */
@@ -438,6 +442,10 @@ footer p {
     }
     .logo_container img {
         width: 45%;
+    }
+    .m_container {
+        width: 95%;
+        padding: 10px;
     }
 }
 
