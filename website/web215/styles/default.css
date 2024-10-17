@@ -239,17 +239,19 @@ legend {
 
 label {
     background-color: #fcecb1;
-    padding: 20px;
-    margin-bottom: 5px;
+    padding: 10px 5px;
     color: #5c4033;
     display: inline-block;
     font-size: 1rem;
-    margin-left: 5px;
+}
+
+#radio-button-label, #checkbox-label {
+    margin: 0 25px;
 }
 
 input[type="text"], input[type="email"] {
     width: 675px;
-    padding: 10px;
+    padding: 10px 5px;
     background-color: #fff9d4;
     color: #5c4033;
     border-radius: 5px;
@@ -271,13 +273,11 @@ div[contenteditable="true"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    gap: 10px;
-    margin-top: 10px;
     align-items: center;
 }
 
 input[type="checkbox"], input[type="radio"] {
-    margin-right: 15px;
+    margin: 10px 5px;
 }
 
 #submit_button {
