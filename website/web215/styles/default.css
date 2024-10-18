@@ -313,19 +313,19 @@ main.brand {
     background-color: #F26724;
 }
 
-main .mission h3 {
-    font-family: "Architects Daughter", sans-serif; /* Added fallback font */
+main .mission h3, .mission p {
+    font-family: "Amatic SC", "Architects Daughter", sans-serif; /* Added fallback font */
+    font-weight: bold;
     text-align: center;
     margin-top: 50px;
-    font-size: 1.75rem;
+    font-size: 2.5rem;
+    color: #571C1E;
 }
 
 main .mission p {
-    font-family: "Architects Daughter", sans-serif; /* Added fallback font */
-    font-size: 1.15rem;
-    text-align: center;
-    margin-bottom: 75px;   
-    color: #571C1E;
+    font-size: 1.75rem;
+    margin-top: 10px;
+    margin-bottom: 75px;
 }
 
 nav.brand div a {
@@ -353,6 +353,7 @@ nav.brand div a:hover {
 }
 
 .font_container {
+    font-size: 1.75rem;
     width: 100%;
     margin: 50px 25px 75px;
     text-align: center;
@@ -374,6 +375,7 @@ nav.brand div a:hover {
     justify-content: center;
     gap: 50px;
     background: none;
+    margin-bottom: 50px;
 }
 
 .color_palette ul li {
