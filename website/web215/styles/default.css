@@ -269,7 +269,7 @@ div[contenteditable="true"] {
     overflow: auto;
 }
 
-.checkbox_container, .radio_container {
+.checkbox_container, .radio_container_one, .radio_container_two {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -313,6 +313,22 @@ main.brand {
     background-color: #F26724;
 }
 
+main .mission h3 {
+    font-family: "Architects Daughter", sans-serif; /* Added fallback font */
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.75rem;
+}
+
+main .mission p {
+    font-family: "Architects Daughter", sans-serif; /* Added fallback font */
+    font-size: 1.15rem;
+    text-align: center;
+    margin-bottom: 75px;   
+    color: #571C1E;
+}
+
+
 nav.brand div a {
     background-color: rgba(197, 231, 94, 0.7);
     transition: background-color 0.3s ease;
@@ -339,7 +355,7 @@ nav.brand div a:hover {
 
 .font_container {
     width: 100%;
-    margin-bottom: 20px;
+    margin: 50px 25px 75px;
     text-align: center;
 }
 
@@ -374,7 +390,7 @@ nav.brand div a:hover {
 
 footer.brand a{
     color: #A7CD3A;
-    text-shadow: #FFFFFF;
+    text-shadow: -2px 2px 2px #C21824;
 }
 
 /* ============================================================= */
