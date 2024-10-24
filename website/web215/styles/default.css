@@ -164,6 +164,8 @@ main h2 {
 
 #m_content li {
     margin-bottom: 15px;
+    margin-left: 15px;
+    line-height: 1.6;
 }
 
 #m_content li ul {
@@ -173,6 +175,10 @@ main h2 {
 
 #m_content li ul li {
     margin-bottom: 5px;
+}
+
+#m_content .course {
+    margin-left: 35px;
 }
 
 /* ============================================================= */
