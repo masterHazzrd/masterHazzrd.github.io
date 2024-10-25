@@ -10,8 +10,6 @@
     margin: 0;
     padding: 0;
     font-family: "Allerta Stencil", sans-serif;
-    font: 400;
-    font-style: normal;
 }
 
 html, body {
@@ -32,23 +30,18 @@ body {
 /* HEADER STYLES */
 /* ============================================================= */
 
-header {
-    text-align: center;
-    padding: 20px;
-}
-
 header h1, header h2, main h1, main h2, footer p, .font_container p.amatic {
     text-align: center;
 }
 
 header h1 {
-    font-size: 4rem;
     color: #e09f3e; /* Bright fall yellow-orange */
+    padding: 1em 0;
 }
 
 header h2 {
-    font-size: 2rem;
     color: #d97d0d; /* Darker orange */
+    padding: .5em 0;
 }
 
 /* ============================================================= */
@@ -461,7 +454,7 @@ footer p {
         flex-direction: column;
     }
     nav div {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .logo_container img {
         width: 45%;
