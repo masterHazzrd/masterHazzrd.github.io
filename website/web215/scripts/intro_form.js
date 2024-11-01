@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("current_courses_5").value
         ];
 
-        // Map current courses to an unordered list format
+        // Format courses as an unordered list
         const formattedCourses = currentCourses.map(course => `<li>${course}</li>`).join('');
 
         // Capture student type (radio button for Traditional/Non-traditional)
@@ -35,9 +35,15 @@ document.addEventListener("DOMContentLoaded", function() {
         const timeCommitment = document.querySelector('input[name="student_type-2"]:checked').value;
 
         // Capture study preferences (checkboxes)
-        const studyPreferences = [];
-        document.querySelectorAll('input[name="study_preferences_1"]:checked, input[name="study_preferences_2"]:checked').forEach((checkbox) => {
-            studyPreferences.push(checkbox.value);
+        const daytimeNightPreferences = [];
+        const inPersonOnlinePreferences = [];
+
+        document.querySelectorAll('input[name="study_preferences_1"]:checked').forEach((checkbox) => {
+            daytimeNightPreferences.push(checkbox.value);
+        });
+
+        document.querySelectorAll('input[name="study_preferences_2"]:checked').forEach((checkbox) => {
+            inPersonOnlinePreferences.push(checkbox.value);
         });
 
         // Populate and show the submitted data div
@@ -53,11 +59,14 @@ document.addEventListener("DOMContentLoaded", function() {
             <ul>${formattedCourses}</ul><br>
             <p><strong>Student Type:</strong> ${studentType}</p><br>
             <p><strong>Full-time or Part-time:</strong> ${timeCommitment}</p><br>
-            <p><strong>Study Preferences (Day/Night/In-Person/Online):</strong> ${studyPreferences.join(', ')}</p><br><br>
-            
+            <p><strong>Study Preferences:</strong></p>
+            <ul>
+                <li><strong>Daytime/Night Classes:</strong> ${daytimeNightPreferences.join(', ')}</li>
+                <li><strong>In Person, Online, or Hybrid Classes:</strong> ${inPersonOnlinePreferences.join(', ')}</li>
+            </ul><br><br>
             <button id="resetButton">Reset</button>
         `;
-        
+
         // Show the submitted data div
         submittedDataDiv.style.display = "block";
 
