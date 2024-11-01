@@ -22,8 +22,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f9e79f;
-    color: #5c4033;
+    background-color: #f9e79f; /* Light yellow for default pages */
+    color: #5c4033; /* Dark brown text */
 }
 
 /* ============================================================= */
@@ -35,12 +35,12 @@ header h1, header h2, main h1, main h2, footer p, .font_container p.amatic {
 }
 
 header h1 {
-    color: #e09f3e;
+    color: #e09f3e; /* Bright fall yellow-orange */
     padding: 1em 0;
 }
 
 header h2 {
-    color: #d97d0d;
+    color: #d97d0d; /* Darker orange */
     padding: .5em 0;
 }
 
@@ -87,6 +87,17 @@ header h2 {
     background-color: rgb(240, 177, 94);
 }
 
+@media (max-width: 768px) {
+    #index_link_area, nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #index_link_area div, nav div {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
 /* ============================================================= */
 /* MAIN SECTION STYLES */
 /* ============================================================= */
@@ -102,8 +113,111 @@ main h2 {
     color: #d97d0d;
 }
 
+/* Main container styling */
+#m_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+/* Image and content container styling */
+#m_content, #m_img {
+    padding: 10px;
+}
+
+#m_content {
+    flex: 2;
+    max-width: 55%;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+#m_img {
+    flex: 1;
+    max-width: 45%;
+}
+
+#m_img img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Content styling for lists */
+#m_content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#m_content li {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    line-height: 1.6;
+}
+
+#m_content li ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+#m_content li ul li {
+    margin-bottom: 5px;
+}
+
+#m_content .course {
+    margin-left: 35px;
+}
+
 /* ============================================================= */
-/* FORM STYLES */
+/* PARAGRAPH STYLES (Used for index.html) */
+/* ============================================================= */
+
+#index_main_para {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 150px 75px;
+    color: #5c4033;
+}
+
+#index_main_para strong, 
+#m_content strong, 
+.text_box strong {
+    text-shadow: 
+        -1px 1px 1px #FF4500,
+        -2px 2px 2px #E03E00,
+        -3px 3px 3px #C03800;
+}
+
+#index_main_para a, 
+.text_box a {
+    color: rgba(224, 159, 62, 0.7);
+    text-decoration: none;
+}
+
+#index_main_para a:hover {
+    color: #e09f3e;
+}
+
+.text_box ol li {
+    list-style: none;
+    padding: 15px 75px;
+}
+
+.text_box p {
+    font-style: italic;
+    font-size: 1.25rem;
+    text-align: center;
+    padding-top: 35px;
+}
+
+/* ============================================================= */
+/* FORM STYLES (Used for forms like intro_form.html) */
 /* ============================================================= */
 
 #form_container {
@@ -181,6 +295,135 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 /* ============================================================= */
+/* BRAND PAGE SPECIFIC STYLES (brand.html) */
+/* ============================================================= */
+
+body.brand {
+    background-color: #F26724;
+}
+
+header.brand h1, header.brand h2, main.brand h1, main.brand h2 {
+    font-family: "Amatic SC", sans-serif;
+    color: #571C1E;
+    text-align: center;
+}
+
+main.brand {
+    background-color: #F26724;
+}
+
+main .mission h3, .mission p {
+    font-family: "Amatic SC", "Architects Daughter", sans-serif; /* Added fallback font */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    color: #571C1E;
+}
+
+main .mission p {
+    font-size: 1.75rem;
+    margin-top: 10px;
+    margin-bottom: 75px;
+}
+
+nav.brand div a {
+    background-color: rgba(197, 231, 94, 0.7);
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+nav.brand div a:hover {
+    background-color: #A7CD3A;
+    color: #fff;
+}
+
+.logo_container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo_container img {
+    width: 43%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.font_container {
+    font-size: 1.75rem;
+    width: 100%;
+    margin: 50px 25px 75px;
+    text-align: center;
+}
+
+.font_container p.amatic {
+    font-family: "Amatic SC";
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.font_container p.arch_font {
+    font-family: "Architects Daughter";
+}
+
+.color_palette ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: none;
+    margin-bottom: 50px;
+}
+
+.color_palette ul li {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+footer.brand a{
+    color: #A7CD3A;
+    text-shadow: -2px 2px 2px #C21824;
+}
+
+/* ============================================================= */
+/* FOOTER STYLES */
+/* ============================================================= */
+
+footer {
+    text-align: center;
+    color: #5c4033;
+    border-top: 3px solid #772e25;
+    background-color: transparent;
+}
+
+footer p {
+    padding: 20px;
+}
+
+.foot-nav {
+    overflow: hidden;
+}
+
+.foot-nav a {
+    color: #E03E00;
+    text-align: center;
+    text-decoration: none;
+    font-size: clamp(.425rem, 3vw, .85rem);
+}
+
+.foot-nav a:hover {
+    text-shadow: 0px 1px 3px #FF4500;
+}
+
+/* ============================================================= */
 /* SUBMITTED DATA STYLES */
 /* ============================================================= */
 
@@ -218,33 +461,24 @@ input[type="checkbox"], input[type="radio"] {
 }
 
 /* ============================================================= */
-/* FOOTER STYLES */
-/* ============================================================= */
-
-footer {
-    text-align: center;
-    color: #5c4033;
-    border-top: 3px solid #772e25;
-    background-color: transparent;
-}
-
-footer p {
-    padding: 20px;
-}
-
-.foot-nav a {
-    color: #E03E00;
-    text-decoration: none;
-    font-size: clamp(.425rem, 3vw, .85rem);
-}
-
-.foot-nav a:hover {
-    text-shadow: 0px 1px 3px #FF4500;
-}
-
-/* ============================================================= */
 /* RESPONSIVE DESIGN */
 /* ============================================================= */
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 3rem;
+    }
+    header h2 {
+        font-size: 1.75rem;
+    }
+    nav div a {
+        padding: 8px 15px;
+        font-size: 1.2rem;
+    }
+    .logo_container img {
+        width: 35%;
+    }
+}
 
 @media (max-width: 768px) {
     header h1 {
@@ -256,6 +490,16 @@ footer p {
     nav {
         flex-direction: column;
     }
+    nav div {
+        margin-bottom: 5px;
+    }
+    .logo_container img {
+        width: 45%;
+    }
+    .m_container {
+        width: 95%;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -264,5 +508,12 @@ footer p {
     }
     header h2 {
         font-size: 1.25rem;
+    }
+    .logo_container img {
+        width: 55%;
+    }
+    .color_palette ul li {
+        width: 80px;
+        height: 80px;
     }
 }
