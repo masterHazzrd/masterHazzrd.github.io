@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoList from './components/TodoList';
 import TodoForm from './components/TodoForm';
+import Footer from './components/Footer'; 
 import axios from 'axios';
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
       <h3>Garbage Goals</h3>
       <TodoForm addTodo={addTodo} />
       <TodoList todos={todos} deleteTodo={deleteTodo} toggleComplete={toggleComplete} />
+      <Footer />
     </div>
   );
 }
