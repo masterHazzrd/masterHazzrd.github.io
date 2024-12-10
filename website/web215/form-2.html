@@ -26,6 +26,27 @@
 
     <main>
         <h2>Introduction Form</h2>
+        <!-- Display Current Session Info -->
+        <div id="current_session_info">
+            <h3>Current Session Info</h3>
+            <p id="current_browser">Browser: </p>
+            <p id="current_timestamp">Timestamp: </p>
+            <p id="current_ip">IP Address: </p>
+            <p id="current_session">Session Info: </p>
+        </div>
+
+        <!-- Display Last Session Info -->
+        <div id="last_session_info">
+            <h3>Last Session Info (from Cookies)</h3>
+            <p id="last_browser">Browser: </p>
+            <p id="last_timestamp">Timestamp: </p>
+            <p id="last_ip">IP Address: </p>
+            <p id="last_session">Session Info: </p>
+        </div>
+        
+        <div>
+            <button id="purge_cookies_button">Purge Cookies</button>
+        </div>
         <div id="form_container">
             <form id="intro_form">
                 <fieldset>
