@@ -363,6 +363,12 @@ div[contenteditable="true"] {
     overflow: auto;
 }
 
+/*  GSD PAGE Styles*/
+
+.main-container{
+    margin: auto auto;
+}
+
 /* =============================== */
 /* FOOTER STYLES */
 /* =============================== */
