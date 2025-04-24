@@ -1,0 +1,479 @@
+/* =============================== */
+/* RESET STYLES */
+/* =============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* =============================== */
+/* GLOBAL STYLES */
+/* =============================== */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1B263B; /* Navy blue background */
+    color: #D1D5DB; /* Light gray text */
+    line-height: 1.6;
+}
+
+main {
+    flex: 1;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =============================== */
+/* HEADER STYLES */
+/* =============================== */
+header {
+    background-color: #3E5060; /* Blue-gray */
+    color: #D1D5DB; /* Light gray */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 0 2%;
+}
+
+/* =============================== */
+/* NAVIGATION STYLES */
+/* =============================== */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative; /* Necessary for positioning dropdown */
+}
+
+.nav-links a {
+    color: #D1D5DB; /* Light gray text */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 1s ease, color 2s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    background-color: #5DADE2; /* Bright blue hover effect */
+    color: #000; /* Black text on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position it below the parent link */
+    left: 0;
+    background-color: #3E5060; /* Matches nav bar */
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    margin: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #D1D5DB; /* Light gray */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #5DADE2; /* Bright blue */
+}
+
+/* Show dropdown on hover */
+.nav-links .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Responsive Design for Dropdown */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: static; /* Dropdown stacks with other items */
+        box-shadow: none; /* Remove shadow for stacked view */
+    }
+}
+
+/* =============================== */
+/* INDEX MAIN STYLES */
+/* =============================== */
+.index_main {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+    min-height: calc(100vh - 165px); /* Subtract header and footer heights */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1B263B; /* Navy blue background */
+    color: #D1D5DB; /* Light gray text */
+    
+    /*border: 2px solid white;*/
+}
+
+.index_main h2 {
+    margin-bottom: 3%;
+
+    /*border: 2px solid orange;*/
+}
+
+#index_main_para {
+    font-size: 1.1rem;
+    margin: 0 20%;
+
+    /*border: 2px solid lime;*/
+}
+
+#index_main_para strong a {
+    color: #5DADE2;
+}
+
+/* =============================== */
+/* INTRO MAIN STYLES */
+/* =============================== */
+.split_layout {
+    display: flex;
+    flex-direction: row;
+    padding: .8%;
+
+    /*border: 2px solid white;*/
+}
+
+.text_section h2 {
+    font-size: 1.6rem;
+    margin: 0 auto;
+}
+
+.img_section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    max-width: 26vw;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
+
+.text_section {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2%;
+    
+}
+
+.text_section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.text_section li {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .split-layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .image-section, .text-section {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  figure {
+    max-width: 100%;
+  }
+}
+
+/* =============================== */
+/* FORM PAGE STYLES */
+/* =============================== */
+.form_main {
+    width: 80vw; /* Set a width for the main container */
+    max-width: 1200px; /* Optional: Limit the max width for large screens */
+    margin: 4vh auto;
+    padding: 20px; /* Add padding for spacing */
+    border: 1px solid #D1D5DB; /* Optional: Add a border for visual clarity */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #3E5060; /* Background color for the form */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+}
+
+.form_main h2 {
+    text-align: center;
+    padding: 1.75%;
+}
+
+#intro-form fieldset {
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    background-color: #2C3E50;
+}
+
+#intro-form legend {
+    text-align: right;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#personal-info {
+    display: flex; /* Use flexbox for side-by-side alignment */
+    gap: 1.4vw; /* Optional: Add spacing between child divs */
+    margin-left: 1.6vw;
+    margin-bottom: 1vh;
+}
+
+#platform-info {
+    display: flex; /* Use flexbox for side-by-side alignment */
+    padding: 1.7vh 0;
+    margin-left: 1.5vw;
+}
+
+#course-info {
+    display: flex; /* Use flexbox for side-by-side alignment */
+    padding: 1.7vh 0;
+    margin-left: 1.5vw;
+}
+
+#personal-info div {
+    display: flex; /* Align label and input side by side */
+    flex-direction: row; /* Keep label and input stacked vertically within each div */
+}
+
+#personal-info label, #bckgrd-info label, #platform-info label, #course-info label {
+    font-weight: bold; /* Optional: Make labels stand out */
+}
+
+#personal-info label, #course-info label {
+    margin-right: 25px;
+}
+
+#personal-info input {
+    padding: 5px; /* Add padding inside input fields */
+    border: 1px solid #ccc; /* Optional: Add border styling to inputs */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    width: 380px;
+    background-color: #5DADE2;
+    color: #3E5060;
+}
+
+#platform-info input {
+    padding: 5px; /* Add padding inside input fields */
+    border: 1px solid #ccc; /* Optional: Add border styling to inputs */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    width: 45vw; /* Optional: Make input fill the div width */
+    margin-left: 1vw;
+    background-color: #5DADE2;
+    color: #3E5060;
+}
+
+#course-info input {
+    padding: 5px; /* Add padding inside input fields */
+    border: 1px solid #ccc; /* Optional: Add border styling to inputs */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    width: 45vw; /* Optional: Make input fill the div width */
+    margin-left: 1vw;
+    background-color: #5DADE2;
+    color: #3E5060;
+}
+
+#bckgrd-info div {
+    display: flex; /* Align label and input side by side */
+    flex-direction: column;
+    background-color: #5DADE2;
+    color: #3E5060;
+    margin: 1vh auto;
+}
+
+#bckgrd-info label {
+    margin-left: 2vw;
+    padding-left: 1vw;
+}
+
+div[contenteditable="true"] {
+    width: 95%;
+    padding: 10px 15px;
+    text-align: justify;
+    line-height: normal;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+/* =============================== */
+/* FOOTER STYLES */
+/* =============================== */
+footer {
+    background-color: #3E5060; /* Matches nav bar */
+    color: #D1D5DB; /* Light gray text */
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 3px solid #5DADE2; /* Bright blue accent */
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Footer Navigation */
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.footer-links > li {
+    position: relative;
+}
+
+.footer-links > li > a {
+    color: #D1D5DB; /* Light gray */
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.footer-links > li > a:hover {
+    background-color: #5DADE2; /* Bright blue */
+    color: #000; /* Black text on hover */
+}
+
+/* Dropdown Menu */
+.footer-dropdown {
+    display: none; /* Hidden by default */
+    position: absolute;
+    bottom: 100%; /* Dropdown expands upward */
+    left: 0;
+    background-color: #3E5060; /* Matches footer background */
+    list-style: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    margin: 0;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.footer-dropdown li {
+    margin: 0;
+    text-align: center;
+}
+
+.footer-dropdown a {
+    color: #D1D5DB; /* Light gray */
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: block;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.footer-dropdown a:hover {
+    background-color: #5DADE2; /* Bright blue */
+}
+
+/* Show dropdown on hover */
+.footer-links > li:hover .footer-dropdown {
+    display: block;
+}
+
+/* Disable hover background for .validation */
+.footer-links > .validation > a:hover {
+    background-color: transparent; /* No background color change */
+    color: #D1D5DB; /* Retain the original text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-dropdown {
+        position: static; /* Stacks dropdown inline for mobile */
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .footer-dropdown a {
+        padding: 10px 5px;
+    }
+}

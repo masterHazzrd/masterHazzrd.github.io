@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Jocular Grit | WEB215 | Form1</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/loadComponents.js" defer></script>
+</head>
+
+<body>
+    <!-- Static Header Section -->
+    <header>
+        <div class="page-title">
+            <h1>John Gallagher's | Jocular Grit | WEB215</h1>
+        </div>
+
+        <!-- Placeholder for Navigation -->
+        <div id="nav-container"></div>
+    </header>
+
+    <main class="form_main">
+        <!-- Page-Specific Content Goes Here -->
+        <h2>Introduction Form</h2>
+        <div class="form-container">
+            <form id="intro-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div id="personal-info">
+                        <div>
+                            <label for="fullname">Enter Full Name: </label>
+                            <input type="text" id="fullname" name="fullname" value="Joe/Jane Doe" />
+                        </div>
+                        <div>
+                            <label for="email">Enter Email Addr: </label>
+                            <input type="text" id="email" name="email" value="j.doe@email.cpcc.edu" />
+                        </div>                                             
+                    </div>
+                    <div id="bckgrd-info">
+                        <label for="personal-bckgrd">Personal Background: </label>
+                        <div id="personal-bckgrd" name="personal-bckgrd" contenteditable="true">
+                        Hey there, I’m John Gallagher. Born in Tucson, AZ, I moved to Matthews, NC, at 12 and later joined the Army. As a late Gen Xer, 
+                        I watched the world evolve from no computers to countless devices, sparking my interest in early websites. Life took me through 
+                        deployments, four amazing kids, and a variety of jobs, but my passion for coding stuck. Now, after years of experience and 
+                        self-teaching, I’m excited to finish my degree and make web development my next big adventure.
+                        </div>
+                        <label for="academic-bckgrd">Academic background: </label>
+                        <div id="academic-bckgrd" name="academic-bckgrd" contenteditable="true">
+                        I am currently pursuing an A.A.S. in Software Development and a Web Development Certificate at Central Piedmont Community College, 
+                        with graduation expected in Spring 2025. My academic background includes studies in Computer Science, History, and Political Science, 
+                        which have honed my adaptability and problem-solving skills. I am now focused on advancing my expertise in web development, with a 
+                        particular interest in creating dynamic and efficient websites.
+                        </div>
+                        <label for="subject-bckgrd">Subject Background: </label>
+                        <div id="subject-bckgrd" name="subject-bckgrd" contenteditable="true">
+                         I have always been fascinated by the rapid evolution of technology and its impact on our daily lives. My initial exposure to coding 
+                         began with HTML and CSS, which sparked a lasting interest in web development. After gaining diverse professional experience, I am now 
+                         focused on completing my A.A.S. in Software Development and a Web Development Certificate to deepen my technical skills and build 
+                         innovative, user-friendly websites.
+                        </div>
+                    </div>
+                    <div id="platform-info">
+                        <label for="primary_platform_used">Primary Computer Platform:</label>
+                        <input type="text" id="primary_platform_used" name="primary_platform_used" 
+                        value="PC , Windows and Ubuntu, and a Laptop">
+                    </div>
+                    <div id="course-info">
+                        <label for="current_courses">Courses I'm in & Why:</label>
+                        <br>
+                        <label for="current_courses_1">Course ID:</label>
+                        <input type="text" id="current_courses_1" name="current_courses_1" 
+                        value="CTS118-N801 IS Professional Comm: Required for degree." required>
+                    </div>                  
+                </fieldset>
+            </form>
+        </div>        
+    </main>
+
+    <!-- Placeholder for Footer -->
+    <div id="footer-container"></div>
+</body>
+
+</html>
