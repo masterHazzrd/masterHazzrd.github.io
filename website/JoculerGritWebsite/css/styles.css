@@ -198,13 +198,13 @@ figure {
 }
 
 figure img {
-    max-width: 26vw;
+    max-width: 24vw;
     border-radius: 5px;
 }
 
 figcaption {
     font-size: 0.9rem;
-    color: #555;
+    color: #7e7c7c;
     font-style: italic;
 }
 
