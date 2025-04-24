@@ -200,7 +200,7 @@ figure {
 figure img {
     max-width: 24vw;
     border-radius: 5px;
-    overflow: hidden;
+    overflow: hidden;  /*remove ling if no effects is noticed*/
 }
 
 figcaption {
